@@ -62,6 +62,24 @@ class calculadoraPrimeroMultListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#Modh.
+    def enterModh(self, ctx:calculadoraPrimeroMultParser.ModhContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#Modh.
+    def exitModh(self, ctx:calculadoraPrimeroMultParser.ModhContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#raiz.
+    def enterRaiz(self, ctx:calculadoraPrimeroMultParser.RaizContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#raiz.
+    def exitRaiz(self, ctx:calculadoraPrimeroMultParser.RaizContext):
+        pass
+
+
     # Enter a parse tree produced by calculadoraPrimeroMultParser#MulDiv.
     def enterMulDiv(self, ctx:calculadoraPrimeroMultParser.MulDivContext):
         pass

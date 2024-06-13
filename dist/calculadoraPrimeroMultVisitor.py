@@ -39,6 +39,16 @@ class calculadoraPrimeroMultVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#Modh.
+    def visitModh(self, ctx:calculadoraPrimeroMultParser.ModhContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#raiz.
+    def visitRaiz(self, ctx:calculadoraPrimeroMultParser.RaizContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by calculadoraPrimeroMultParser#MulDiv.
     def visitMulDiv(self, ctx:calculadoraPrimeroMultParser.MulDivContext):
         return self.visitChildren(ctx)

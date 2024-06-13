@@ -66,6 +66,19 @@ class EvalVisitor(calculadoraPrimeroMultVisitor):
     
     def visitTan(self, ctx):
         return math.tan(math.radians(self.visit(ctx.expr())))
+    
+    def visitMod(self, ctx):
+        left = self.visit(ctx.expr(0))
+        right = self.visit(ctx.expr(1))
+        return left % right
+    
+    def visitRaiz(self, ctx):
+        left = self.visit(ctx.expr(0))
+        if ctx.expr(1) is None:
+            right = 2
+        else:
+            right = self.visit(ctx.expr(1))
+        return left ** (1/right)
 
 def main():
     input_stream = FileStream("ejemplo.txt")
