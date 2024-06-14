@@ -116,6 +116,15 @@ class calculadoraPrimeroMultListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#MatrixSubtract.
+    def enterMatrixSubtract(self, ctx:calculadoraPrimeroMultParser.MatrixSubtractContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#MatrixSubtract.
+    def exitMatrixSubtract(self, ctx:calculadoraPrimeroMultParser.MatrixSubtractContext):
+        pass
+
+
     # Enter a parse tree produced by calculadoraPrimeroMultParser#float.
     def enterFloat(self, ctx:calculadoraPrimeroMultParser.FloatContext):
         pass

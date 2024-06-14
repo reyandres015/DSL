@@ -84,8 +84,8 @@ class EvalVisitor(calculadoraPrimeroMultVisitor):
         text = ctx.getText()
         text = text.replace('[', '')
         text = text.replace(']', '')
-        text = text.replace(',','')
-        matrix = [[int(element) for element in row] for row in text]
+        elements = text.split(',')
+        matrix = [[int(element) for element in row.split()] for row in elements]
         return matrix
 
     def visitMatrixAdd(self, ctx):
@@ -100,6 +100,19 @@ class EvalVisitor(calculadoraPrimeroMultVisitor):
     def sumar_matrices(self, matrix1, matrix2):
         # Sumar las matrices
         return[[a + b for a, b in zip(row1, row2)] for row1, row2 in zip(matrix1, matrix2)]
+    
+    def visitMatrixSubtract(self, ctx):
+        num_matrices = ctx.getChildCount() // 2 + 1
+        
+        result_matrix = self.visit(ctx.matrix(0))
+        for i in range(1, num_matrices):
+            result_matrix = self.restar_matrices(result_matrix, self.visit(ctx.matrix(i)))
+
+        return result_matrix
+    
+    def restar_matrices(self, matrix1, matrix2):
+        # Sumar las matrices
+        return[[a - b for a, b in zip(row1, row2)] for row1, row2 in zip(matrix1, matrix2)]
 
 def main():
     input_stream = FileStream("ejemplo.txt")

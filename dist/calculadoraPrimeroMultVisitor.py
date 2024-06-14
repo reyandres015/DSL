@@ -69,6 +69,11 @@ class calculadoraPrimeroMultVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#MatrixSubtract.
+    def visitMatrixSubtract(self, ctx:calculadoraPrimeroMultParser.MatrixSubtractContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by calculadoraPrimeroMultParser#float.
     def visitFloat(self, ctx:calculadoraPrimeroMultParser.FloatContext):
         return self.visitChildren(ctx)
