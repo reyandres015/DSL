@@ -35,15 +35,6 @@ class calculadoraPrimeroMultListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by calculadoraPrimeroMultParser#tan.
-    def enterTan(self, ctx:calculadoraPrimeroMultParser.TanContext):
-        pass
-
-    # Exit a parse tree produced by calculadoraPrimeroMultParser#tan.
-    def exitTan(self, ctx:calculadoraPrimeroMultParser.TanContext):
-        pass
-
-
     # Enter a parse tree produced by calculadoraPrimeroMultParser#MatrixAdd.
     def enterMatrixAdd(self, ctx:calculadoraPrimeroMultParser.MatrixAddContext):
         pass
@@ -71,30 +62,12 @@ class calculadoraPrimeroMultListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by calculadoraPrimeroMultParser#Mod.
-    def enterMod(self, ctx:calculadoraPrimeroMultParser.ModContext):
-        pass
-
-    # Exit a parse tree produced by calculadoraPrimeroMultParser#Mod.
-    def exitMod(self, ctx:calculadoraPrimeroMultParser.ModContext):
-        pass
-
-
     # Enter a parse tree produced by calculadoraPrimeroMultParser#MulDiv.
     def enterMulDiv(self, ctx:calculadoraPrimeroMultParser.MulDivContext):
         pass
 
     # Exit a parse tree produced by calculadoraPrimeroMultParser#MulDiv.
     def exitMulDiv(self, ctx:calculadoraPrimeroMultParser.MulDivContext):
-        pass
-
-
-    # Enter a parse tree produced by calculadoraPrimeroMultParser#AddSub.
-    def enterAddSub(self, ctx:calculadoraPrimeroMultParser.AddSubContext):
-        pass
-
-    # Exit a parse tree produced by calculadoraPrimeroMultParser#AddSub.
-    def exitAddSub(self, ctx:calculadoraPrimeroMultParser.AddSubContext):
         pass
 
 
@@ -107,21 +80,21 @@ class calculadoraPrimeroMultListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by calculadoraPrimeroMultParser#MatrixSubtract.
-    def enterMatrixSubtract(self, ctx:calculadoraPrimeroMultParser.MatrixSubtractContext):
-        pass
-
-    # Exit a parse tree produced by calculadoraPrimeroMultParser#MatrixSubtract.
-    def exitMatrixSubtract(self, ctx:calculadoraPrimeroMultParser.MatrixSubtractContext):
-        pass
-
-
     # Enter a parse tree produced by calculadoraPrimeroMultParser#for.
     def enterFor(self, ctx:calculadoraPrimeroMultParser.ForContext):
         pass
 
     # Exit a parse tree produced by calculadoraPrimeroMultParser#for.
     def exitFor(self, ctx:calculadoraPrimeroMultParser.ForContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#paint.
+    def enterPaint(self, ctx:calculadoraPrimeroMultParser.PaintContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#paint.
+    def exitPaint(self, ctx:calculadoraPrimeroMultParser.PaintContext):
         pass
 
 
@@ -143,15 +116,6 @@ class calculadoraPrimeroMultListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by calculadoraPrimeroMultParser#int.
-    def enterInt(self, ctx:calculadoraPrimeroMultParser.IntContext):
-        pass
-
-    # Exit a parse tree produced by calculadoraPrimeroMultParser#int.
-    def exitInt(self, ctx:calculadoraPrimeroMultParser.IntContext):
-        pass
-
-
     # Enter a parse tree produced by calculadoraPrimeroMultParser#MatrixTransposed.
     def enterMatrixTransposed(self, ctx:calculadoraPrimeroMultParser.MatrixTransposedContext):
         pass
@@ -170,6 +134,15 @@ class calculadoraPrimeroMultListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#paintBall.
+    def enterPaintBall(self, ctx:calculadoraPrimeroMultParser.PaintBallContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#paintBall.
+    def exitPaintBall(self, ctx:calculadoraPrimeroMultParser.PaintBallContext):
+        pass
+
+
     # Enter a parse tree produced by calculadoraPrimeroMultParser#conditionalIf.
     def enterConditionalIf(self, ctx:calculadoraPrimeroMultParser.ConditionalIfContext):
         pass
@@ -179,12 +152,12 @@ class calculadoraPrimeroMultListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by calculadoraPrimeroMultParser#MatrixInverse.
-    def enterMatrixInverse(self, ctx:calculadoraPrimeroMultParser.MatrixInverseContext):
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#paintBars.
+    def enterPaintBars(self, ctx:calculadoraPrimeroMultParser.PaintBarsContext):
         pass
 
-    # Exit a parse tree produced by calculadoraPrimeroMultParser#MatrixInverse.
-    def exitMatrixInverse(self, ctx:calculadoraPrimeroMultParser.MatrixInverseContext):
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#paintBars.
+    def exitPaintBars(self, ctx:calculadoraPrimeroMultParser.PaintBarsContext):
         pass
 
 
@@ -194,15 +167,6 @@ class calculadoraPrimeroMultListener(ParseTreeListener):
 
     # Exit a parse tree produced by calculadoraPrimeroMultParser#sin.
     def exitSin(self, ctx:calculadoraPrimeroMultParser.SinContext):
-        pass
-
-
-    # Enter a parse tree produced by calculadoraPrimeroMultParser#Pow.
-    def enterPow(self, ctx:calculadoraPrimeroMultParser.PowContext):
-        pass
-
-    # Exit a parse tree produced by calculadoraPrimeroMultParser#Pow.
-    def exitPow(self, ctx:calculadoraPrimeroMultParser.PowContext):
         pass
 
 
@@ -230,6 +194,78 @@ class calculadoraPrimeroMultListener(ParseTreeListener):
 
     # Exit a parse tree produced by calculadoraPrimeroMultParser#printExpr.
     def exitPrintExpr(self, ctx:calculadoraPrimeroMultParser.PrintExprContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#tan.
+    def enterTan(self, ctx:calculadoraPrimeroMultParser.TanContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#tan.
+    def exitTan(self, ctx:calculadoraPrimeroMultParser.TanContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#Mod.
+    def enterMod(self, ctx:calculadoraPrimeroMultParser.ModContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#Mod.
+    def exitMod(self, ctx:calculadoraPrimeroMultParser.ModContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#AddSub.
+    def enterAddSub(self, ctx:calculadoraPrimeroMultParser.AddSubContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#AddSub.
+    def exitAddSub(self, ctx:calculadoraPrimeroMultParser.AddSubContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#MatrixSubtract.
+    def enterMatrixSubtract(self, ctx:calculadoraPrimeroMultParser.MatrixSubtractContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#MatrixSubtract.
+    def exitMatrixSubtract(self, ctx:calculadoraPrimeroMultParser.MatrixSubtractContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#int.
+    def enterInt(self, ctx:calculadoraPrimeroMultParser.IntContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#int.
+    def exitInt(self, ctx:calculadoraPrimeroMultParser.IntContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#paintBrownie.
+    def enterPaintBrownie(self, ctx:calculadoraPrimeroMultParser.PaintBrownieContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#paintBrownie.
+    def exitPaintBrownie(self, ctx:calculadoraPrimeroMultParser.PaintBrownieContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#MatrixInverse.
+    def enterMatrixInverse(self, ctx:calculadoraPrimeroMultParser.MatrixInverseContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#MatrixInverse.
+    def exitMatrixInverse(self, ctx:calculadoraPrimeroMultParser.MatrixInverseContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#Pow.
+    def enterPow(self, ctx:calculadoraPrimeroMultParser.PowContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#Pow.
+    def exitPow(self, ctx:calculadoraPrimeroMultParser.PowContext):
         pass
 
 

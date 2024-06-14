@@ -27,7 +27,11 @@ expr:
 	| RAIZ ('(' expr ')' | '(' expr ',' expr ')')			# raiz
 	| IF '(' cond ')' '->' block (ELSE '->' block)?			# conditionalIf
 	| FOR '(' ID '=' expr ';' ID '=' expr ')' '->' block	# for
-	| WHILE '(' cond ')' '->' block							# while;
+	| WHILE '(' cond ')' '->' block							# while
+	| PAINT '(' expr ',' expr ')'							# paint
+	| PAINTBALL '(' expr ',' expr ')'						# paintBall
+	| PAINTBARS '(' expr ',' expr ')'						# paintBars
+	| BROWNIE '(' expr ')'									# paintBrownie;
 
 block: '{' NEWLINE (expr NEWLINE)* NEWLINE* '}';
 
@@ -50,6 +54,10 @@ SHOW: 'show';
 FOR: 'for';
 WHILE: 'while';
 
+PAINT: 'paint';
+PAINTBALL: 'paintball';
+PAINTBARS: 'paintbars';
+BROWNIE: 'brownie';
 matrix: '[' expr (',' expr)* ']';
 INVERSE: 'inverse';
 TRANSPOSED: 'transposed';

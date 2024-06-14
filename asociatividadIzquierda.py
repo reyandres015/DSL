@@ -6,6 +6,7 @@ from dist.calculadoraPrimeroMultVisitor import calculadoraPrimeroMultVisitor
 import math
 import numpy as np
 from ast import literal_eval
+import matplotlib.pyplot as plt
 
 
 class EvalVisitor(calculadoraPrimeroMultVisitor):
@@ -188,6 +189,29 @@ class EvalVisitor(calculadoraPrimeroMultVisitor):
     def visitWhile(self, ctx):
         while self.visit(ctx.cond()):
             self.visit(ctx.block())
+
+    def visitPaint(self, ctx):
+        x = self.visit(ctx.expr(0))
+        y = self.visit(ctx.expr(1))
+        plt.plot(x, y)
+        plt.show()
+
+    def visitPaintBall(self, ctx):
+        x = self.visit(ctx.expr(0))
+        y = self.visit(ctx.expr(1))
+        plt.scatter(x, y)
+        plt.show()
+
+    def visitPaintBars(self, ctx):
+        x = self.visit(ctx.expr(0))
+        y = self.visit(ctx.expr(1))
+        plt.bar(x, y)
+        plt.show()
+
+    def visitPaintBars(self, ctx):
+        x = self.visit(ctx.expr(0))
+        plt.pie(x)
+        plt.show()
 
 
 def main():
