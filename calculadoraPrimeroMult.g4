@@ -15,6 +15,7 @@ expr:
 	| INVERSE '(' matrix ')'								# MatrixInverse
 	| TRANSPOSED '(' matrix ')'								# MatrixTransposed
 	| matrix												# idMatrix
+	| CADENA												# cadena
 	| FLOAT													# float
 	| INT													# int
 	| ID													# id
@@ -31,7 +32,9 @@ expr:
 	| PAINT '(' expr ',' expr ')'							# paint
 	| PAINTBALL '(' expr ',' expr ')'						# paintBall
 	| PAINTBARS '(' expr ',' expr ')'						# paintBars
-	| BROWNIE '(' expr ')'									# paintBrownie;
+	| BROWNIE '(' expr ')'									# paintBrownie
+	| LEER '(' expr ')'										# leer
+	| ESCRIBIR '(' expr ',' expr ')'						# escribir;
 
 block: '{' NEWLINE (expr NEWLINE)* NEWLINE* '}';
 
@@ -58,6 +61,10 @@ PAINT: 'paint';
 PAINTBALL: 'paintball';
 PAINTBARS: 'paintbars';
 BROWNIE: 'brownie';
+
+LEER: 'leer';
+ESCRIBIR: 'escribir';
+
 matrix: '[' expr (',' expr)* ']';
 INVERSE: 'inverse';
 TRANSPOSED: 'transposed';
@@ -71,6 +78,7 @@ COS: 'cos';
 TAN: 'tan';
 MOD: '%';
 RAIZ: 'root';
+CADENA: '"' (~["\r\n])* '"';
 ID: [a-zA-Z]+; // Coincide con identificadores
 INT: '-'? [0-9]+; // Coincide con enteros
 FLOAT: '-'? [0-9]+ '.' [0-9]+; // Coincide con flotantes

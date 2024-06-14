@@ -56,6 +56,9 @@ class EvalVisitor(calculadoraPrimeroMultVisitor):
     def visitInt(self, ctx):
         return int(ctx.INT().getText())
 
+    def visitCadena(self, ctx):
+        return str(ctx.CADENA().getText())
+
     def visitFloat(self, ctx):
         return float(ctx.FLOAT().getText())
 
@@ -212,6 +215,30 @@ class EvalVisitor(calculadoraPrimeroMultVisitor):
         x = self.visit(ctx.expr(0))
         plt.pie(x)
         plt.show()
+
+    def visitLeer(self, ctx):
+        archiveName = self.visit(ctx.expr())
+        archiveName = archiveName.replace('"', '')
+        try:
+            with open(archiveName, 'r') as archivo:
+                contenido = archivo.read()
+                print(f"Contenido del archivo {archiveName}:\n{contenido}")
+        except Exception as e:
+            print(f"Error al leer el archivo: {e}")
+
+    def visitEscribir(self, ctx):
+        archiveName = self.visit(ctx.expr(0))
+        archiveName = archiveName.replace('"', '')
+        archiveContent = str(self.visit(ctx.expr(1)))
+        archiveContent = archiveContent.replace('"', '')
+        archiveContent += '\n'
+        try:
+            with open(archiveName, 'a', encoding='utf-8') as archivo:
+                archivo.write(archiveContent)
+                print(
+                    f"Se ha escrito el contenido en el archivo {archiveName}")
+        except Exception as e:
+            print(f"Error al escribir en el archivo: {e}")
 
 
 def main():

@@ -69,6 +69,11 @@ class calculadoraPrimeroMultVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#leer.
+    def visitLeer(self, ctx:calculadoraPrimeroMultParser.LeerContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by calculadoraPrimeroMultParser#MatrixTransposed.
     def visitMatrixTransposed(self, ctx:calculadoraPrimeroMultParser.MatrixTransposedContext):
         return self.visitChildren(ctx)
@@ -134,6 +139,11 @@ class calculadoraPrimeroMultVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#cadena.
+    def visitCadena(self, ctx:calculadoraPrimeroMultParser.CadenaContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by calculadoraPrimeroMultParser#int.
     def visitInt(self, ctx:calculadoraPrimeroMultParser.IntContext):
         return self.visitChildren(ctx)
@@ -141,6 +151,11 @@ class calculadoraPrimeroMultVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by calculadoraPrimeroMultParser#paintBrownie.
     def visitPaintBrownie(self, ctx:calculadoraPrimeroMultParser.PaintBrownieContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#escribir.
+    def visitEscribir(self, ctx:calculadoraPrimeroMultParser.EscribirContext):
         return self.visitChildren(ctx)
 
 

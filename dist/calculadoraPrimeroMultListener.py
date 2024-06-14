@@ -116,6 +116,15 @@ class calculadoraPrimeroMultListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#leer.
+    def enterLeer(self, ctx:calculadoraPrimeroMultParser.LeerContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#leer.
+    def exitLeer(self, ctx:calculadoraPrimeroMultParser.LeerContext):
+        pass
+
+
     # Enter a parse tree produced by calculadoraPrimeroMultParser#MatrixTransposed.
     def enterMatrixTransposed(self, ctx:calculadoraPrimeroMultParser.MatrixTransposedContext):
         pass
@@ -233,6 +242,15 @@ class calculadoraPrimeroMultListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#cadena.
+    def enterCadena(self, ctx:calculadoraPrimeroMultParser.CadenaContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#cadena.
+    def exitCadena(self, ctx:calculadoraPrimeroMultParser.CadenaContext):
+        pass
+
+
     # Enter a parse tree produced by calculadoraPrimeroMultParser#int.
     def enterInt(self, ctx:calculadoraPrimeroMultParser.IntContext):
         pass
@@ -248,6 +266,15 @@ class calculadoraPrimeroMultListener(ParseTreeListener):
 
     # Exit a parse tree produced by calculadoraPrimeroMultParser#paintBrownie.
     def exitPaintBrownie(self, ctx:calculadoraPrimeroMultParser.PaintBrownieContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#escribir.
+    def enterEscribir(self, ctx:calculadoraPrimeroMultParser.EscribirContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#escribir.
+    def exitEscribir(self, ctx:calculadoraPrimeroMultParser.EscribirContext):
         pass
 
 
