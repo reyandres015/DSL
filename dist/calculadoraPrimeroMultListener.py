@@ -17,21 +17,12 @@ class calculadoraPrimeroMultListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by calculadoraPrimeroMultParser#printExpr.
-    def enterPrintExpr(self, ctx:calculadoraPrimeroMultParser.PrintExprContext):
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#Expression.
+    def enterExpression(self, ctx:calculadoraPrimeroMultParser.ExpressionContext):
         pass
 
-    # Exit a parse tree produced by calculadoraPrimeroMultParser#printExpr.
-    def exitPrintExpr(self, ctx:calculadoraPrimeroMultParser.PrintExprContext):
-        pass
-
-
-    # Enter a parse tree produced by calculadoraPrimeroMultParser#assign.
-    def enterAssign(self, ctx:calculadoraPrimeroMultParser.AssignContext):
-        pass
-
-    # Exit a parse tree produced by calculadoraPrimeroMultParser#assign.
-    def exitAssign(self, ctx:calculadoraPrimeroMultParser.AssignContext):
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#Expression.
+    def exitExpression(self, ctx:calculadoraPrimeroMultParser.ExpressionContext):
         pass
 
 
@@ -161,6 +152,15 @@ class calculadoraPrimeroMultListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#conditionalIf.
+    def enterConditionalIf(self, ctx:calculadoraPrimeroMultParser.ConditionalIfContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#conditionalIf.
+    def exitConditionalIf(self, ctx:calculadoraPrimeroMultParser.ConditionalIfContext):
+        pass
+
+
     # Enter a parse tree produced by calculadoraPrimeroMultParser#MatrixInverse.
     def enterMatrixInverse(self, ctx:calculadoraPrimeroMultParser.MatrixInverseContext):
         pass
@@ -203,6 +203,123 @@ class calculadoraPrimeroMultListener(ParseTreeListener):
 
     # Exit a parse tree produced by calculadoraPrimeroMultParser#MatrixMultiply.
     def exitMatrixMultiply(self, ctx:calculadoraPrimeroMultParser.MatrixMultiplyContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#printExpr.
+    def enterPrintExpr(self, ctx:calculadoraPrimeroMultParser.PrintExprContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#printExpr.
+    def exitPrintExpr(self, ctx:calculadoraPrimeroMultParser.PrintExprContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#assign.
+    def enterAssign(self, ctx:calculadoraPrimeroMultParser.AssignContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#assign.
+    def exitAssign(self, ctx:calculadoraPrimeroMultParser.AssignContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#block.
+    def enterBlock(self, ctx:calculadoraPrimeroMultParser.BlockContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#block.
+    def exitBlock(self, ctx:calculadoraPrimeroMultParser.BlockContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#equal.
+    def enterEqual(self, ctx:calculadoraPrimeroMultParser.EqualContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#equal.
+    def exitEqual(self, ctx:calculadoraPrimeroMultParser.EqualContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#not.
+    def enterNot(self, ctx:calculadoraPrimeroMultParser.NotContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#not.
+    def exitNot(self, ctx:calculadoraPrimeroMultParser.NotContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#greaterEqualThan.
+    def enterGreaterEqualThan(self, ctx:calculadoraPrimeroMultParser.GreaterEqualThanContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#greaterEqualThan.
+    def exitGreaterEqualThan(self, ctx:calculadoraPrimeroMultParser.GreaterEqualThanContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#or.
+    def enterOr(self, ctx:calculadoraPrimeroMultParser.OrContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#or.
+    def exitOr(self, ctx:calculadoraPrimeroMultParser.OrContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#and.
+    def enterAnd(self, ctx:calculadoraPrimeroMultParser.AndContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#and.
+    def exitAnd(self, ctx:calculadoraPrimeroMultParser.AndContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#lessThan.
+    def enterLessThan(self, ctx:calculadoraPrimeroMultParser.LessThanContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#lessThan.
+    def exitLessThan(self, ctx:calculadoraPrimeroMultParser.LessThanContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#notEqual.
+    def enterNotEqual(self, ctx:calculadoraPrimeroMultParser.NotEqualContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#notEqual.
+    def exitNotEqual(self, ctx:calculadoraPrimeroMultParser.NotEqualContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#lessEqualThan.
+    def enterLessEqualThan(self, ctx:calculadoraPrimeroMultParser.LessEqualThanContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#lessEqualThan.
+    def exitLessEqualThan(self, ctx:calculadoraPrimeroMultParser.LessEqualThanContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#greaterThan.
+    def enterGreaterThan(self, ctx:calculadoraPrimeroMultParser.GreaterThanContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#greaterThan.
+    def exitGreaterThan(self, ctx:calculadoraPrimeroMultParser.GreaterThanContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#parensCond.
+    def enterParensCond(self, ctx:calculadoraPrimeroMultParser.ParensCondContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#parensCond.
+    def exitParensCond(self, ctx:calculadoraPrimeroMultParser.ParensCondContext):
         pass
 
 

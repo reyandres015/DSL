@@ -14,13 +14,8 @@ class calculadoraPrimeroMultVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by calculadoraPrimeroMultParser#printExpr.
-    def visitPrintExpr(self, ctx:calculadoraPrimeroMultParser.PrintExprContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by calculadoraPrimeroMultParser#assign.
-    def visitAssign(self, ctx:calculadoraPrimeroMultParser.AssignContext):
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#Expression.
+    def visitExpression(self, ctx:calculadoraPrimeroMultParser.ExpressionContext):
         return self.visitChildren(ctx)
 
 
@@ -94,6 +89,11 @@ class calculadoraPrimeroMultVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#conditionalIf.
+    def visitConditionalIf(self, ctx:calculadoraPrimeroMultParser.ConditionalIfContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by calculadoraPrimeroMultParser#MatrixInverse.
     def visitMatrixInverse(self, ctx:calculadoraPrimeroMultParser.MatrixInverseContext):
         return self.visitChildren(ctx)
@@ -116,6 +116,71 @@ class calculadoraPrimeroMultVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by calculadoraPrimeroMultParser#MatrixMultiply.
     def visitMatrixMultiply(self, ctx:calculadoraPrimeroMultParser.MatrixMultiplyContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#printExpr.
+    def visitPrintExpr(self, ctx:calculadoraPrimeroMultParser.PrintExprContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#assign.
+    def visitAssign(self, ctx:calculadoraPrimeroMultParser.AssignContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#block.
+    def visitBlock(self, ctx:calculadoraPrimeroMultParser.BlockContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#equal.
+    def visitEqual(self, ctx:calculadoraPrimeroMultParser.EqualContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#not.
+    def visitNot(self, ctx:calculadoraPrimeroMultParser.NotContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#greaterEqualThan.
+    def visitGreaterEqualThan(self, ctx:calculadoraPrimeroMultParser.GreaterEqualThanContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#or.
+    def visitOr(self, ctx:calculadoraPrimeroMultParser.OrContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#and.
+    def visitAnd(self, ctx:calculadoraPrimeroMultParser.AndContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#lessThan.
+    def visitLessThan(self, ctx:calculadoraPrimeroMultParser.LessThanContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#notEqual.
+    def visitNotEqual(self, ctx:calculadoraPrimeroMultParser.NotEqualContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#lessEqualThan.
+    def visitLessEqualThan(self, ctx:calculadoraPrimeroMultParser.LessEqualThanContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#greaterThan.
+    def visitGreaterThan(self, ctx:calculadoraPrimeroMultParser.GreaterThanContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#parensCond.
+    def visitParensCond(self, ctx:calculadoraPrimeroMultParser.ParensCondContext):
         return self.visitChildren(ctx)
 
 

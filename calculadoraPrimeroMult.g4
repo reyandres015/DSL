@@ -2,13 +2,11 @@ grammar calculadoraPrimeroMult;
 
 prog: stat+;
 
-stat:
-	expr NEWLINE			# printExpr
-	| ID '=' expr NEWLINE	# assign
-	| NEWLINE				# blank;
+stat: expr NEWLINE # Expression | NEWLINE # blank;
 
 expr:
-	expr op = ('*' | '/') expr						# MulDiv
+	SHOW '(' expr ')'								# printExpr
+	| expr op = ('*' | '/') expr					# MulDiv
 	| expr op = ('+' | '-') expr					# AddSub
 	| expr '^' expr									# Pow
 	| matrix ('+' matrix)+							# MatrixAdd
@@ -20,12 +18,32 @@ expr:
 	| FLOAT											# float
 	| INT											# int
 	| ID											# id
+	| ID '=' expr									# assign
 	| '(' expr ')'									# parens
 	| SIN '(' expr ')'								# sin
 	| COS '(' expr ')'								# cos
 	| TAN '(' expr ')'								# tan
 	| expr MOD expr									# Mod
-	| RAIZ ('(' expr ')' | '(' expr ',' expr ')')	# raiz;
+	| RAIZ ('(' expr ')' | '(' expr ',' expr ')')	# raiz
+	| IF '(' cond ')' '->' block (ELSE '->' block)?	# conditionalIf;
+
+block: '{' NEWLINE (expr NEWLINE)* NEWLINE* '}';
+
+cond:
+	expr '<' expr		# lessThan
+	| expr '>' expr		# greaterThan
+	| expr '<=' expr	# lessEqualThan
+	| expr '>=' expr	# greaterEqualThan
+	| expr '==' expr	# equal
+	| expr '!=' expr	# notEqual
+	| cond '&&' cond	# and
+	| cond '||' cond	# or
+	| '!' cond			# not
+	| '(' cond ')'		# parensCond;
+
+IF: 'if';
+ELSE: 'else';
+SHOW: 'show';
 
 matrix: '[' expr (',' expr)* ']';
 INVERSE: 'inverse';

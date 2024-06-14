@@ -13,6 +13,10 @@ class EvalVisitor(calculadoraPrimeroMultVisitor):
         self.memory = {}
 
     # Métodos visit
+    def visitExpression(self, ctx):
+        value = self.visit(ctx.expr())
+        return value
+
     def visitPrintExpr(self, ctx):
         value = self.visit(ctx.expr())
         print(value)
@@ -131,6 +135,50 @@ class EvalVisitor(calculadoraPrimeroMultVisitor):
     def visitMatrixTransposed(self, ctx):
         matrix1 = self.visit(ctx.matrix())
         return np.transpose(np.array(matrix1))
+
+    def visitLessThan(self, ctx):
+        left = self.visit(ctx.expr(0))
+        right = self.visit(ctx.expr(1))
+        return left < right
+
+    def visitGreaterThan(self, ctx):
+        left = self.visit(ctx.expr(0))
+        right = self.visit(ctx.expr(1))
+        return left > right
+
+    def visitLessEqualThan(self, ctx):
+        left = self.visit(ctx.expr(0))
+        right = self.visit(ctx.expr(1))
+        return left <= right
+
+    def visitEqual(self, ctx):
+        left = self.visit(ctx.expr(0))
+        right = self.visit(ctx.expr(1))
+        return left == right
+
+    def visitNotEqual(self, ctx):
+        left = self.visit(ctx.expr(0))
+        right = self.visit(ctx.expr(1))
+        return left != right
+
+    def visitAnd(self, ctx):
+        left = self.visit(ctx.expr(0))
+        right = self.visit(ctx.expr(1))
+        return left and right
+
+    def visitOr(self, ctx):
+        left = self.visit(ctx.expr(0))
+        right = self.visit(ctx.expr(1))
+        return left or right
+
+    def visitNot(self, ctx):
+        return not self.visit(ctx.expr())
+
+    def visitConditionalIf(self, ctx):
+        if self.visit(ctx.cond()):
+            return self.visit(ctx.block(0))
+        else:
+            return self.visit(ctx.block(1))
 
 
 def main():
