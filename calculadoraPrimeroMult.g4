@@ -10,8 +10,12 @@ stat:
 expr:
 	expr op = ('*' | '/') expr						# MulDiv
 	| expr op = ('+' | '-') expr					# AddSub
+	| expr '^' expr									# Pow
 	| matrix ('+' matrix)+							# MatrixAdd
 	| matrix ('-' matrix)+							# MatrixSubtract
+	| matrix ('*' matrix)+							# MatrixMultiply
+	| INVERSE '(' matrix ')'						# MatrixInverse
+	| TRANSPOSED '(' matrix ')'						# MatrixTransposed
 	| matrix										# idMatrix
 	| FLOAT											# float
 	| INT											# int
@@ -20,10 +24,12 @@ expr:
 	| SIN '(' expr ')'								# sin
 	| COS '(' expr ')'								# cos
 	| TAN '(' expr ')'								# tan
-	| expr MOD expr									# Modh
+	| expr MOD expr									# Mod
 	| RAIZ ('(' expr ')' | '(' expr ',' expr ')')	# raiz;
 
 matrix: '[' expr (',' expr)* ']';
+INVERSE: 'inverse';
+TRANSPOSED: 'transposed';
 
 MUL: '*';
 DIV: '/';

@@ -49,8 +49,8 @@ class calculadoraPrimeroMultVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by calculadoraPrimeroMultParser#Modh.
-    def visitModh(self, ctx:calculadoraPrimeroMultParser.ModhContext):
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#Mod.
+    def visitMod(self, ctx:calculadoraPrimeroMultParser.ModContext):
         return self.visitChildren(ctx)
 
 
@@ -84,8 +84,18 @@ class calculadoraPrimeroMultVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#MatrixTransposed.
+    def visitMatrixTransposed(self, ctx:calculadoraPrimeroMultParser.MatrixTransposedContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by calculadoraPrimeroMultParser#raiz.
     def visitRaiz(self, ctx:calculadoraPrimeroMultParser.RaizContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#MatrixInverse.
+    def visitMatrixInverse(self, ctx:calculadoraPrimeroMultParser.MatrixInverseContext):
         return self.visitChildren(ctx)
 
 
@@ -94,8 +104,18 @@ class calculadoraPrimeroMultVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#Pow.
+    def visitPow(self, ctx:calculadoraPrimeroMultParser.PowContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by calculadoraPrimeroMultParser#id.
     def visitId(self, ctx:calculadoraPrimeroMultParser.IdContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#MatrixMultiply.
+    def visitMatrixMultiply(self, ctx:calculadoraPrimeroMultParser.MatrixMultiplyContext):
         return self.visitChildren(ctx)
 
 

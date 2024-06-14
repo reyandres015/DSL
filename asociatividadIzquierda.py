@@ -1,8 +1,11 @@
-import math
 from antlr4 import *
 from dist.calculadoraPrimeroMultLexer import calculadoraPrimeroMultLexer
 from dist.calculadoraPrimeroMultParser import calculadoraPrimeroMultParser
 from dist.calculadoraPrimeroMultVisitor import calculadoraPrimeroMultVisitor
+
+import math
+import numpy as np
+from ast import literal_eval
 
 
 class EvalVisitor(calculadoraPrimeroMultVisitor):
@@ -40,6 +43,11 @@ class EvalVisitor(calculadoraPrimeroMultVisitor):
         else:
             return left - right
 
+    def visitPow(self, ctx):
+        left = self.visit(ctx.expr(0))
+        right = self.visit(ctx.expr(1))
+        return left ** right
+
     def visitInt(self, ctx):
         return int(ctx.INT().getText())
 
@@ -57,21 +65,21 @@ class EvalVisitor(calculadoraPrimeroMultVisitor):
             return True
         else:
             return False
-        
+
     def visitSin(self, ctx):
         return math.sin(math.radians(self.visit(ctx.expr())))
-    
+
     def visitCos(self, ctx):
         return math.cos(math.radians(self.visit(ctx.expr())))
-    
+
     def visitTan(self, ctx):
         return math.tan(math.radians(self.visit(ctx.expr())))
-    
+
     def visitMod(self, ctx):
         left = self.visit(ctx.expr(0))
         right = self.visit(ctx.expr(1))
         return left % right
-    
+
     def visitRaiz(self, ctx):
         left = self.visit(ctx.expr(0))
         if ctx.expr(1) is None:
@@ -79,40 +87,51 @@ class EvalVisitor(calculadoraPrimeroMultVisitor):
         else:
             right = self.visit(ctx.expr(1))
         return left ** (1/right)
-    
+
     def visitMatrix(self, ctx):
         text = ctx.getText()
-        text = text.replace('[', '')
-        text = text.replace(']', '')
-        elements = text.split(',')
-        matrix = [[int(element) for element in row.split()] for row in elements]
+        matrix = literal_eval(text)
         return matrix
 
     def visitMatrixAdd(self, ctx):
         num_matrices = ctx.getChildCount() // 2 + 1
-        
+
         result_matrix = self.visit(ctx.matrix(0))
         for i in range(1, num_matrices):
-            result_matrix = self.sumar_matrices(result_matrix, self.visit(ctx.matrix(i)))
-
+            result_matrix = self.sumar_matrices(
+                result_matrix, self.visit(ctx.matrix(i)))
         return result_matrix
-    
+
     def sumar_matrices(self, matrix1, matrix2):
-        # Sumar las matrices
-        return[[a + b for a, b in zip(row1, row2)] for row1, row2 in zip(matrix1, matrix2)]
-    
+        return [[a + b for a, b in zip(row1, row2)] for row1, row2 in zip(matrix1, matrix2)]
+
     def visitMatrixSubtract(self, ctx):
         num_matrices = ctx.getChildCount() // 2 + 1
-        
+
         result_matrix = self.visit(ctx.matrix(0))
         for i in range(1, num_matrices):
-            result_matrix = self.restar_matrices(result_matrix, self.visit(ctx.matrix(i)))
+            result_matrix = self.restar_matrices(
+                result_matrix, self.visit(ctx.matrix(i)))
 
         return result_matrix
-    
+
     def restar_matrices(self, matrix1, matrix2):
         # Sumar las matrices
-        return[[a - b for a, b in zip(row1, row2)] for row1, row2 in zip(matrix1, matrix2)]
+        return [[a - b for a, b in zip(row1, row2)] for row1, row2 in zip(matrix1, matrix2)]
+
+    def visitMatrixMultiply(self, ctx):
+        matrix1 = self.visit(ctx.matrix(0))
+        matrix2 = self.visit(ctx.matrix(1))
+        return np.array(matrix1) @ np.array(matrix2)
+
+    def visitMatrixInverse(self, ctx):
+        matrix1 = self.visit(ctx.matrix())
+        return np.linalg.inv(np.array(matrix1))
+
+    def visitMatrixTransposed(self, ctx):
+        matrix1 = self.visit(ctx.matrix())
+        return np.transpose(np.array(matrix1))
+
 
 def main():
     input_stream = FileStream("ejemplo.txt")
