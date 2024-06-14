@@ -69,8 +69,18 @@ class calculadoraPrimeroMultVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#for.
+    def visitFor(self, ctx:calculadoraPrimeroMultParser.ForContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by calculadoraPrimeroMultParser#float.
     def visitFloat(self, ctx:calculadoraPrimeroMultParser.FloatContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by calculadoraPrimeroMultParser#while.
+    def visitWhile(self, ctx:calculadoraPrimeroMultParser.WhileContext):
         return self.visitChildren(ctx)
 
 

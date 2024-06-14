@@ -5,27 +5,29 @@ prog: stat+;
 stat: expr NEWLINE # Expression | NEWLINE # blank;
 
 expr:
-	SHOW '(' expr ')'								# printExpr
-	| expr op = ('*' | '/') expr					# MulDiv
-	| expr op = ('+' | '-') expr					# AddSub
-	| expr '^' expr									# Pow
-	| matrix ('+' matrix)+							# MatrixAdd
-	| matrix ('-' matrix)+							# MatrixSubtract
-	| matrix ('*' matrix)+							# MatrixMultiply
-	| INVERSE '(' matrix ')'						# MatrixInverse
-	| TRANSPOSED '(' matrix ')'						# MatrixTransposed
-	| matrix										# idMatrix
-	| FLOAT											# float
-	| INT											# int
-	| ID											# id
-	| ID '=' expr									# assign
-	| '(' expr ')'									# parens
-	| SIN '(' expr ')'								# sin
-	| COS '(' expr ')'								# cos
-	| TAN '(' expr ')'								# tan
-	| expr MOD expr									# Mod
-	| RAIZ ('(' expr ')' | '(' expr ',' expr ')')	# raiz
-	| IF '(' cond ')' '->' block (ELSE '->' block)?	# conditionalIf;
+	SHOW '(' expr ')'										# printExpr
+	| expr op = ('*' | '/') expr							# MulDiv
+	| expr op = ('+' | '-') expr							# AddSub
+	| expr '^' expr											# Pow
+	| matrix ('+' matrix)+									# MatrixAdd
+	| matrix ('-' matrix)+									# MatrixSubtract
+	| matrix ('*' matrix)+									# MatrixMultiply
+	| INVERSE '(' matrix ')'								# MatrixInverse
+	| TRANSPOSED '(' matrix ')'								# MatrixTransposed
+	| matrix												# idMatrix
+	| FLOAT													# float
+	| INT													# int
+	| ID													# id
+	| ID '=' expr											# assign
+	| '(' expr ')'											# parens
+	| SIN '(' expr ')'										# sin
+	| COS '(' expr ')'										# cos
+	| TAN '(' expr ')'										# tan
+	| expr MOD expr											# Mod
+	| RAIZ ('(' expr ')' | '(' expr ',' expr ')')			# raiz
+	| IF '(' cond ')' '->' block (ELSE '->' block)?			# conditionalIf
+	| FOR '(' ID '=' expr ';' ID '=' expr ')' '->' block	# for
+	| WHILE '(' cond ')' '->' block							# while;
 
 block: '{' NEWLINE (expr NEWLINE)* NEWLINE* '}';
 
@@ -44,6 +46,9 @@ cond:
 IF: 'if';
 ELSE: 'else';
 SHOW: 'show';
+
+FOR: 'for';
+WHILE: 'while';
 
 matrix: '[' expr (',' expr)* ']';
 INVERSE: 'inverse';

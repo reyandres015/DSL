@@ -10,78 +10,85 @@ else:
 
 def serializedATN():
     return [
-        4,1,38,203,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,1,0,4,
+        4,1,41,223,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,1,0,4,
         0,14,8,0,11,0,12,0,15,1,1,1,1,1,1,1,1,3,1,22,8,1,1,2,1,2,1,2,1,2,
         1,2,1,2,1,2,1,2,1,2,4,2,33,8,2,11,2,12,2,34,1,2,1,2,1,2,4,2,40,8,
         2,11,2,12,2,41,1,2,1,2,1,2,4,2,47,8,2,11,2,12,2,48,1,2,1,2,1,2,1,
         2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,
         2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,
         2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,3,2,98,8,2,1,2,1,2,
-        1,2,1,2,1,2,1,2,1,2,1,2,1,2,3,2,109,8,2,3,2,111,8,2,1,2,1,2,1,2,
-        1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,5,2,125,8,2,10,2,12,2,128,9,
-        2,1,3,1,3,1,3,1,3,1,3,5,3,135,8,3,10,3,12,3,138,9,3,1,3,5,3,141,
-        8,3,10,3,12,3,144,9,3,1,3,1,3,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,
+        1,2,1,2,1,2,1,2,1,2,1,2,1,2,3,2,109,8,2,1,2,1,2,1,2,1,2,1,2,1,2,
+        1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,3,2,131,
+        8,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,5,2,145,8,2,
+        10,2,12,2,148,9,2,1,3,1,3,1,3,1,3,1,3,5,3,155,8,3,10,3,12,3,158,
+        9,3,1,3,5,3,161,8,3,10,3,12,3,164,9,3,1,3,1,3,1,4,1,4,1,4,1,4,1,
         4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,
-        4,1,4,1,4,1,4,1,4,1,4,1,4,3,4,179,8,4,1,4,1,4,1,4,1,4,1,4,1,4,5,
-        4,187,8,4,10,4,12,4,190,9,4,1,5,1,5,1,5,1,5,5,5,196,8,5,10,5,12,
-        5,199,9,5,1,5,1,5,1,5,0,2,4,8,6,0,2,4,6,8,10,0,2,1,0,25,26,1,0,27,
-        28,235,0,13,1,0,0,0,2,21,1,0,0,0,4,110,1,0,0,0,6,129,1,0,0,0,8,178,
-        1,0,0,0,10,191,1,0,0,0,12,14,3,2,1,0,13,12,1,0,0,0,14,15,1,0,0,0,
-        15,13,1,0,0,0,15,16,1,0,0,0,16,1,1,0,0,0,17,18,3,4,2,0,18,19,5,37,
-        0,0,19,22,1,0,0,0,20,22,5,37,0,0,21,17,1,0,0,0,21,20,1,0,0,0,22,
-        3,1,0,0,0,23,24,6,2,-1,0,24,25,5,22,0,0,25,26,5,1,0,0,26,27,3,4,
-        2,0,27,28,5,2,0,0,28,111,1,0,0,0,29,32,3,10,5,0,30,31,5,27,0,0,31,
-        33,3,10,5,0,32,30,1,0,0,0,33,34,1,0,0,0,34,32,1,0,0,0,34,35,1,0,
-        0,0,35,111,1,0,0,0,36,39,3,10,5,0,37,38,5,28,0,0,38,40,3,10,5,0,
-        39,37,1,0,0,0,40,41,1,0,0,0,41,39,1,0,0,0,41,42,1,0,0,0,42,111,1,
-        0,0,0,43,46,3,10,5,0,44,45,5,25,0,0,45,47,3,10,5,0,46,44,1,0,0,0,
-        47,48,1,0,0,0,48,46,1,0,0,0,48,49,1,0,0,0,49,111,1,0,0,0,50,51,5,
-        23,0,0,51,52,5,1,0,0,52,53,3,10,5,0,53,54,5,2,0,0,54,111,1,0,0,0,
-        55,56,5,24,0,0,56,57,5,1,0,0,57,58,3,10,5,0,58,59,5,2,0,0,59,111,
-        1,0,0,0,60,111,3,10,5,0,61,111,5,36,0,0,62,111,5,35,0,0,63,111,5,
-        34,0,0,64,65,5,34,0,0,65,66,5,4,0,0,66,111,3,4,2,8,67,68,5,1,0,0,
-        68,69,3,4,2,0,69,70,5,2,0,0,70,111,1,0,0,0,71,72,5,29,0,0,72,73,
-        5,1,0,0,73,74,3,4,2,0,74,75,5,2,0,0,75,111,1,0,0,0,76,77,5,30,0,
-        0,77,78,5,1,0,0,78,79,3,4,2,0,79,80,5,2,0,0,80,111,1,0,0,0,81,82,
-        5,31,0,0,82,83,5,1,0,0,83,84,3,4,2,0,84,85,5,2,0,0,85,111,1,0,0,
-        0,86,97,5,33,0,0,87,88,5,1,0,0,88,89,3,4,2,0,89,90,5,2,0,0,90,98,
-        1,0,0,0,91,92,5,1,0,0,92,93,3,4,2,0,93,94,5,5,0,0,94,95,3,4,2,0,
-        95,96,5,2,0,0,96,98,1,0,0,0,97,87,1,0,0,0,97,91,1,0,0,0,98,111,1,
-        0,0,0,99,100,5,20,0,0,100,101,5,1,0,0,101,102,3,8,4,0,102,103,5,
-        2,0,0,103,104,5,6,0,0,104,108,3,6,3,0,105,106,5,21,0,0,106,107,5,
-        6,0,0,107,109,3,6,3,0,108,105,1,0,0,0,108,109,1,0,0,0,109,111,1,
-        0,0,0,110,23,1,0,0,0,110,29,1,0,0,0,110,36,1,0,0,0,110,43,1,0,0,
-        0,110,50,1,0,0,0,110,55,1,0,0,0,110,60,1,0,0,0,110,61,1,0,0,0,110,
-        62,1,0,0,0,110,63,1,0,0,0,110,64,1,0,0,0,110,67,1,0,0,0,110,71,1,
-        0,0,0,110,76,1,0,0,0,110,81,1,0,0,0,110,86,1,0,0,0,110,99,1,0,0,
-        0,111,126,1,0,0,0,112,113,10,20,0,0,113,114,7,0,0,0,114,125,3,4,
-        2,21,115,116,10,19,0,0,116,117,7,1,0,0,117,125,3,4,2,20,118,119,
-        10,18,0,0,119,120,5,3,0,0,120,125,3,4,2,19,121,122,10,3,0,0,122,
-        123,5,32,0,0,123,125,3,4,2,4,124,112,1,0,0,0,124,115,1,0,0,0,124,
-        118,1,0,0,0,124,121,1,0,0,0,125,128,1,0,0,0,126,124,1,0,0,0,126,
-        127,1,0,0,0,127,5,1,0,0,0,128,126,1,0,0,0,129,130,5,7,0,0,130,136,
-        5,37,0,0,131,132,3,4,2,0,132,133,5,37,0,0,133,135,1,0,0,0,134,131,
-        1,0,0,0,135,138,1,0,0,0,136,134,1,0,0,0,136,137,1,0,0,0,137,142,
-        1,0,0,0,138,136,1,0,0,0,139,141,5,37,0,0,140,139,1,0,0,0,141,144,
-        1,0,0,0,142,140,1,0,0,0,142,143,1,0,0,0,143,145,1,0,0,0,144,142,
-        1,0,0,0,145,146,5,8,0,0,146,7,1,0,0,0,147,148,6,4,-1,0,148,149,3,
-        4,2,0,149,150,5,9,0,0,150,151,3,4,2,0,151,179,1,0,0,0,152,153,3,
-        4,2,0,153,154,5,10,0,0,154,155,3,4,2,0,155,179,1,0,0,0,156,157,3,
-        4,2,0,157,158,5,11,0,0,158,159,3,4,2,0,159,179,1,0,0,0,160,161,3,
-        4,2,0,161,162,5,12,0,0,162,163,3,4,2,0,163,179,1,0,0,0,164,165,3,
-        4,2,0,165,166,5,13,0,0,166,167,3,4,2,0,167,179,1,0,0,0,168,169,3,
-        4,2,0,169,170,5,14,0,0,170,171,3,4,2,0,171,179,1,0,0,0,172,173,5,
-        17,0,0,173,179,3,8,4,2,174,175,5,1,0,0,175,176,3,8,4,0,176,177,5,
-        2,0,0,177,179,1,0,0,0,178,147,1,0,0,0,178,152,1,0,0,0,178,156,1,
-        0,0,0,178,160,1,0,0,0,178,164,1,0,0,0,178,168,1,0,0,0,178,172,1,
-        0,0,0,178,174,1,0,0,0,179,188,1,0,0,0,180,181,10,4,0,0,181,182,5,
-        15,0,0,182,187,3,8,4,5,183,184,10,3,0,0,184,185,5,16,0,0,185,187,
-        3,8,4,4,186,180,1,0,0,0,186,183,1,0,0,0,187,190,1,0,0,0,188,186,
-        1,0,0,0,188,189,1,0,0,0,189,9,1,0,0,0,190,188,1,0,0,0,191,192,5,
-        18,0,0,192,197,3,4,2,0,193,194,5,5,0,0,194,196,3,4,2,0,195,193,1,
-        0,0,0,196,199,1,0,0,0,197,195,1,0,0,0,197,198,1,0,0,0,198,200,1,
-        0,0,0,199,197,1,0,0,0,200,201,5,19,0,0,201,11,1,0,0,0,16,15,21,34,
-        41,48,97,108,110,124,126,136,142,178,186,188,197
+        4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,3,4,199,8,4,1,4,1,4,1,
+        4,1,4,1,4,1,4,5,4,207,8,4,10,4,12,4,210,9,4,1,5,1,5,1,5,1,5,5,5,
+        216,8,5,10,5,12,5,219,9,5,1,5,1,5,1,5,0,2,4,8,6,0,2,4,6,8,10,0,2,
+        1,0,28,29,1,0,30,31,257,0,13,1,0,0,0,2,21,1,0,0,0,4,130,1,0,0,0,
+        6,149,1,0,0,0,8,198,1,0,0,0,10,211,1,0,0,0,12,14,3,2,1,0,13,12,1,
+        0,0,0,14,15,1,0,0,0,15,13,1,0,0,0,15,16,1,0,0,0,16,1,1,0,0,0,17,
+        18,3,4,2,0,18,19,5,40,0,0,19,22,1,0,0,0,20,22,5,40,0,0,21,17,1,0,
+        0,0,21,20,1,0,0,0,22,3,1,0,0,0,23,24,6,2,-1,0,24,25,5,23,0,0,25,
+        26,5,1,0,0,26,27,3,4,2,0,27,28,5,2,0,0,28,131,1,0,0,0,29,32,3,10,
+        5,0,30,31,5,30,0,0,31,33,3,10,5,0,32,30,1,0,0,0,33,34,1,0,0,0,34,
+        32,1,0,0,0,34,35,1,0,0,0,35,131,1,0,0,0,36,39,3,10,5,0,37,38,5,31,
+        0,0,38,40,3,10,5,0,39,37,1,0,0,0,40,41,1,0,0,0,41,39,1,0,0,0,41,
+        42,1,0,0,0,42,131,1,0,0,0,43,46,3,10,5,0,44,45,5,28,0,0,45,47,3,
+        10,5,0,46,44,1,0,0,0,47,48,1,0,0,0,48,46,1,0,0,0,48,49,1,0,0,0,49,
+        131,1,0,0,0,50,51,5,26,0,0,51,52,5,1,0,0,52,53,3,10,5,0,53,54,5,
+        2,0,0,54,131,1,0,0,0,55,56,5,27,0,0,56,57,5,1,0,0,57,58,3,10,5,0,
+        58,59,5,2,0,0,59,131,1,0,0,0,60,131,3,10,5,0,61,131,5,39,0,0,62,
+        131,5,38,0,0,63,131,5,37,0,0,64,65,5,37,0,0,65,66,5,4,0,0,66,131,
+        3,4,2,10,67,68,5,1,0,0,68,69,3,4,2,0,69,70,5,2,0,0,70,131,1,0,0,
+        0,71,72,5,32,0,0,72,73,5,1,0,0,73,74,3,4,2,0,74,75,5,2,0,0,75,131,
+        1,0,0,0,76,77,5,33,0,0,77,78,5,1,0,0,78,79,3,4,2,0,79,80,5,2,0,0,
+        80,131,1,0,0,0,81,82,5,34,0,0,82,83,5,1,0,0,83,84,3,4,2,0,84,85,
+        5,2,0,0,85,131,1,0,0,0,86,97,5,36,0,0,87,88,5,1,0,0,88,89,3,4,2,
+        0,89,90,5,2,0,0,90,98,1,0,0,0,91,92,5,1,0,0,92,93,3,4,2,0,93,94,
+        5,5,0,0,94,95,3,4,2,0,95,96,5,2,0,0,96,98,1,0,0,0,97,87,1,0,0,0,
+        97,91,1,0,0,0,98,131,1,0,0,0,99,100,5,21,0,0,100,101,5,1,0,0,101,
+        102,3,8,4,0,102,103,5,2,0,0,103,104,5,6,0,0,104,108,3,6,3,0,105,
+        106,5,22,0,0,106,107,5,6,0,0,107,109,3,6,3,0,108,105,1,0,0,0,108,
+        109,1,0,0,0,109,131,1,0,0,0,110,111,5,24,0,0,111,112,5,1,0,0,112,
+        113,5,37,0,0,113,114,5,4,0,0,114,115,3,4,2,0,115,116,5,7,0,0,116,
+        117,5,37,0,0,117,118,5,4,0,0,118,119,3,4,2,0,119,120,5,2,0,0,120,
+        121,5,6,0,0,121,122,3,6,3,0,122,131,1,0,0,0,123,124,5,25,0,0,124,
+        125,5,1,0,0,125,126,3,8,4,0,126,127,5,2,0,0,127,128,5,6,0,0,128,
+        129,3,6,3,0,129,131,1,0,0,0,130,23,1,0,0,0,130,29,1,0,0,0,130,36,
+        1,0,0,0,130,43,1,0,0,0,130,50,1,0,0,0,130,55,1,0,0,0,130,60,1,0,
+        0,0,130,61,1,0,0,0,130,62,1,0,0,0,130,63,1,0,0,0,130,64,1,0,0,0,
+        130,67,1,0,0,0,130,71,1,0,0,0,130,76,1,0,0,0,130,81,1,0,0,0,130,
+        86,1,0,0,0,130,99,1,0,0,0,130,110,1,0,0,0,130,123,1,0,0,0,131,146,
+        1,0,0,0,132,133,10,22,0,0,133,134,7,0,0,0,134,145,3,4,2,23,135,136,
+        10,21,0,0,136,137,7,1,0,0,137,145,3,4,2,22,138,139,10,20,0,0,139,
+        140,5,3,0,0,140,145,3,4,2,21,141,142,10,5,0,0,142,143,5,35,0,0,143,
+        145,3,4,2,6,144,132,1,0,0,0,144,135,1,0,0,0,144,138,1,0,0,0,144,
+        141,1,0,0,0,145,148,1,0,0,0,146,144,1,0,0,0,146,147,1,0,0,0,147,
+        5,1,0,0,0,148,146,1,0,0,0,149,150,5,8,0,0,150,156,5,40,0,0,151,152,
+        3,4,2,0,152,153,5,40,0,0,153,155,1,0,0,0,154,151,1,0,0,0,155,158,
+        1,0,0,0,156,154,1,0,0,0,156,157,1,0,0,0,157,162,1,0,0,0,158,156,
+        1,0,0,0,159,161,5,40,0,0,160,159,1,0,0,0,161,164,1,0,0,0,162,160,
+        1,0,0,0,162,163,1,0,0,0,163,165,1,0,0,0,164,162,1,0,0,0,165,166,
+        5,9,0,0,166,7,1,0,0,0,167,168,6,4,-1,0,168,169,3,4,2,0,169,170,5,
+        10,0,0,170,171,3,4,2,0,171,199,1,0,0,0,172,173,3,4,2,0,173,174,5,
+        11,0,0,174,175,3,4,2,0,175,199,1,0,0,0,176,177,3,4,2,0,177,178,5,
+        12,0,0,178,179,3,4,2,0,179,199,1,0,0,0,180,181,3,4,2,0,181,182,5,
+        13,0,0,182,183,3,4,2,0,183,199,1,0,0,0,184,185,3,4,2,0,185,186,5,
+        14,0,0,186,187,3,4,2,0,187,199,1,0,0,0,188,189,3,4,2,0,189,190,5,
+        15,0,0,190,191,3,4,2,0,191,199,1,0,0,0,192,193,5,18,0,0,193,199,
+        3,8,4,2,194,195,5,1,0,0,195,196,3,8,4,0,196,197,5,2,0,0,197,199,
+        1,0,0,0,198,167,1,0,0,0,198,172,1,0,0,0,198,176,1,0,0,0,198,180,
+        1,0,0,0,198,184,1,0,0,0,198,188,1,0,0,0,198,192,1,0,0,0,198,194,
+        1,0,0,0,199,208,1,0,0,0,200,201,10,4,0,0,201,202,5,16,0,0,202,207,
+        3,8,4,5,203,204,10,3,0,0,204,205,5,17,0,0,205,207,3,8,4,4,206,200,
+        1,0,0,0,206,203,1,0,0,0,207,210,1,0,0,0,208,206,1,0,0,0,208,209,
+        1,0,0,0,209,9,1,0,0,0,210,208,1,0,0,0,211,212,5,19,0,0,212,217,3,
+        4,2,0,213,214,5,5,0,0,214,216,3,4,2,0,215,213,1,0,0,0,216,219,1,
+        0,0,0,217,215,1,0,0,0,217,218,1,0,0,0,218,220,1,0,0,0,219,217,1,
+        0,0,0,220,221,5,20,0,0,221,11,1,0,0,0,16,15,21,34,41,48,97,108,130,
+        144,146,156,162,198,206,208,217
     ]
 
 class calculadoraPrimeroMultParser ( Parser ):
@@ -95,20 +102,21 @@ class calculadoraPrimeroMultParser ( Parser ):
     sharedContextCache = PredictionContextCache()
 
     literalNames = [ "<INVALID>", "'('", "')'", "'^'", "'='", "','", "'->'", 
-                     "'{'", "'}'", "'<'", "'>'", "'<='", "'>='", "'=='", 
-                     "'!='", "'&&'", "'||'", "'!'", "'['", "']'", "'if'", 
-                     "'else'", "'show'", "'inverse'", "'transposed'", "'*'", 
-                     "'/'", "'+'", "'-'", "'sin'", "'cos'", "'tan'", "'%'", 
-                     "'root'" ]
+                     "';'", "'{'", "'}'", "'<'", "'>'", "'<='", "'>='", 
+                     "'=='", "'!='", "'&&'", "'||'", "'!'", "'['", "']'", 
+                     "'if'", "'else'", "'show'", "'for'", "'while'", "'inverse'", 
+                     "'transposed'", "'*'", "'/'", "'+'", "'-'", "'sin'", 
+                     "'cos'", "'tan'", "'%'", "'root'" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "IF", "ELSE", "SHOW", "INVERSE", "TRANSPOSED", "MUL", 
-                      "DIV", "ADD", "SUB", "SIN", "COS", "TAN", "MOD", "RAIZ", 
-                      "ID", "INT", "FLOAT", "NEWLINE", "WS" ]
+                      "<INVALID>", "IF", "ELSE", "SHOW", "FOR", "WHILE", 
+                      "INVERSE", "TRANSPOSED", "MUL", "DIV", "ADD", "SUB", 
+                      "SIN", "COS", "TAN", "MOD", "RAIZ", "ID", "INT", "FLOAT", 
+                      "NEWLINE", "WS" ]
 
     RULE_prog = 0
     RULE_stat = 1
@@ -139,25 +147,28 @@ class calculadoraPrimeroMultParser ( Parser ):
     T__16=17
     T__17=18
     T__18=19
-    IF=20
-    ELSE=21
-    SHOW=22
-    INVERSE=23
-    TRANSPOSED=24
-    MUL=25
-    DIV=26
-    ADD=27
-    SUB=28
-    SIN=29
-    COS=30
-    TAN=31
-    MOD=32
-    RAIZ=33
-    ID=34
-    INT=35
-    FLOAT=36
-    NEWLINE=37
-    WS=38
+    T__19=20
+    IF=21
+    ELSE=22
+    SHOW=23
+    FOR=24
+    WHILE=25
+    INVERSE=26
+    TRANSPOSED=27
+    MUL=28
+    DIV=29
+    ADD=30
+    SUB=31
+    SIN=32
+    COS=33
+    TAN=34
+    MOD=35
+    RAIZ=36
+    ID=37
+    INT=38
+    FLOAT=39
+    NEWLINE=40
+    WS=41
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -218,7 +229,7 @@ class calculadoraPrimeroMultParser ( Parser ):
                 self.state = 15 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & 270076739586) != 0)):
+                if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & 2160631218178) != 0)):
                     break
 
         except RecognitionException as re:
@@ -307,7 +318,7 @@ class calculadoraPrimeroMultParser ( Parser ):
             self.state = 21
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [1, 18, 20, 22, 23, 24, 29, 30, 31, 33, 34, 35, 36]:
+            if token in [1, 19, 21, 23, 24, 25, 26, 27, 32, 33, 34, 36, 37, 38, 39]:
                 localctx = calculadoraPrimeroMultParser.ExpressionContext(self, localctx)
                 self.enterOuterAlt(localctx, 1)
                 self.state = 17
@@ -315,7 +326,7 @@ class calculadoraPrimeroMultParser ( Parser ):
                 self.state = 18
                 self.match(calculadoraPrimeroMultParser.NEWLINE)
                 pass
-            elif token in [37]:
+            elif token in [40]:
                 localctx = calculadoraPrimeroMultParser.BlankContext(self, localctx)
                 self.enterOuterAlt(localctx, 2)
                 self.state = 20
@@ -615,6 +626,44 @@ class calculadoraPrimeroMultParser ( Parser ):
                 return visitor.visitChildren(self)
 
 
+    class ForContext(ExprContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def FOR(self):
+            return self.getToken(calculadoraPrimeroMultParser.FOR, 0)
+        def ID(self, i:int=None):
+            if i is None:
+                return self.getTokens(calculadoraPrimeroMultParser.ID)
+            else:
+                return self.getToken(calculadoraPrimeroMultParser.ID, i)
+        def expr(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.ExprContext)
+            else:
+                return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,i)
+
+        def block(self):
+            return self.getTypedRuleContext(calculadoraPrimeroMultParser.BlockContext,0)
+
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterFor" ):
+                listener.enterFor(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitFor" ):
+                listener.exitFor(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFor" ):
+                return visitor.visitFor(self)
+            else:
+                return visitor.visitChildren(self)
+
+
     class FloatContext(ExprContext):
 
         def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
@@ -635,6 +684,36 @@ class calculadoraPrimeroMultParser ( Parser ):
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitFloat" ):
                 return visitor.visitFloat(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class WhileContext(ExprContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def WHILE(self):
+            return self.getToken(calculadoraPrimeroMultParser.WHILE, 0)
+        def cond(self):
+            return self.getTypedRuleContext(calculadoraPrimeroMultParser.CondContext,0)
+
+        def block(self):
+            return self.getTypedRuleContext(calculadoraPrimeroMultParser.BlockContext,0)
+
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterWhile" ):
+                listener.enterWhile(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitWhile" ):
+                listener.exitWhile(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitWhile" ):
+                return visitor.visitWhile(self)
             else:
                 return visitor.visitChildren(self)
 
@@ -959,7 +1038,7 @@ class calculadoraPrimeroMultParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 110
+            self.state = 130
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,7,self._ctx)
             if la_ == 1:
@@ -1118,7 +1197,7 @@ class calculadoraPrimeroMultParser ( Parser ):
                 self.state = 65
                 self.match(calculadoraPrimeroMultParser.T__3)
                 self.state = 66
-                self.expr(8)
+                self.expr(10)
                 pass
 
             elif la_ == 12:
@@ -1239,9 +1318,57 @@ class calculadoraPrimeroMultParser ( Parser ):
 
                 pass
 
+            elif la_ == 18:
+                localctx = calculadoraPrimeroMultParser.ForContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+                self.state = 110
+                self.match(calculadoraPrimeroMultParser.FOR)
+                self.state = 111
+                self.match(calculadoraPrimeroMultParser.T__0)
+                self.state = 112
+                self.match(calculadoraPrimeroMultParser.ID)
+                self.state = 113
+                self.match(calculadoraPrimeroMultParser.T__3)
+                self.state = 114
+                self.expr(0)
+                self.state = 115
+                self.match(calculadoraPrimeroMultParser.T__6)
+                self.state = 116
+                self.match(calculadoraPrimeroMultParser.ID)
+                self.state = 117
+                self.match(calculadoraPrimeroMultParser.T__3)
+                self.state = 118
+                self.expr(0)
+                self.state = 119
+                self.match(calculadoraPrimeroMultParser.T__1)
+                self.state = 120
+                self.match(calculadoraPrimeroMultParser.T__5)
+                self.state = 121
+                self.block()
+                pass
+
+            elif la_ == 19:
+                localctx = calculadoraPrimeroMultParser.WhileContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+                self.state = 123
+                self.match(calculadoraPrimeroMultParser.WHILE)
+                self.state = 124
+                self.match(calculadoraPrimeroMultParser.T__0)
+                self.state = 125
+                self.cond(0)
+                self.state = 126
+                self.match(calculadoraPrimeroMultParser.T__1)
+                self.state = 127
+                self.match(calculadoraPrimeroMultParser.T__5)
+                self.state = 128
+                self.block()
+                pass
+
 
             self._ctx.stop = self._input.LT(-1)
-            self.state = 126
+            self.state = 146
             self._errHandler.sync(self)
             _alt = self._interp.adaptivePredict(self._input,9,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
@@ -1249,75 +1376,75 @@ class calculadoraPrimeroMultParser ( Parser ):
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
-                    self.state = 124
+                    self.state = 144
                     self._errHandler.sync(self)
                     la_ = self._interp.adaptivePredict(self._input,8,self._ctx)
                     if la_ == 1:
                         localctx = calculadoraPrimeroMultParser.MulDivContext(self, calculadoraPrimeroMultParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                        self.state = 112
-                        if not self.precpred(self._ctx, 20):
+                        self.state = 132
+                        if not self.precpred(self._ctx, 22):
                             from antlr4.error.Errors import FailedPredicateException
-                            raise FailedPredicateException(self, "self.precpred(self._ctx, 20)")
-                        self.state = 113
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 22)")
+                        self.state = 133
                         localctx.op = self._input.LT(1)
                         _la = self._input.LA(1)
-                        if not(_la==25 or _la==26):
+                        if not(_la==28 or _la==29):
                             localctx.op = self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
                             self.consume()
-                        self.state = 114
-                        self.expr(21)
+                        self.state = 134
+                        self.expr(23)
                         pass
 
                     elif la_ == 2:
                         localctx = calculadoraPrimeroMultParser.AddSubContext(self, calculadoraPrimeroMultParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                        self.state = 115
-                        if not self.precpred(self._ctx, 19):
+                        self.state = 135
+                        if not self.precpred(self._ctx, 21):
                             from antlr4.error.Errors import FailedPredicateException
-                            raise FailedPredicateException(self, "self.precpred(self._ctx, 19)")
-                        self.state = 116
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 21)")
+                        self.state = 136
                         localctx.op = self._input.LT(1)
                         _la = self._input.LA(1)
-                        if not(_la==27 or _la==28):
+                        if not(_la==30 or _la==31):
                             localctx.op = self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
                             self.consume()
-                        self.state = 117
-                        self.expr(20)
+                        self.state = 137
+                        self.expr(22)
                         pass
 
                     elif la_ == 3:
                         localctx = calculadoraPrimeroMultParser.PowContext(self, calculadoraPrimeroMultParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                        self.state = 118
-                        if not self.precpred(self._ctx, 18):
+                        self.state = 138
+                        if not self.precpred(self._ctx, 20):
                             from antlr4.error.Errors import FailedPredicateException
-                            raise FailedPredicateException(self, "self.precpred(self._ctx, 18)")
-                        self.state = 119
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 20)")
+                        self.state = 139
                         self.match(calculadoraPrimeroMultParser.T__2)
-                        self.state = 120
-                        self.expr(19)
+                        self.state = 140
+                        self.expr(21)
                         pass
 
                     elif la_ == 4:
                         localctx = calculadoraPrimeroMultParser.ModContext(self, calculadoraPrimeroMultParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                        self.state = 121
-                        if not self.precpred(self._ctx, 3):
+                        self.state = 141
+                        if not self.precpred(self._ctx, 5):
                             from antlr4.error.Errors import FailedPredicateException
-                            raise FailedPredicateException(self, "self.precpred(self._ctx, 3)")
-                        self.state = 122
+                            raise FailedPredicateException(self, "self.precpred(self._ctx, 5)")
+                        self.state = 142
                         self.match(calculadoraPrimeroMultParser.MOD)
-                        self.state = 123
-                        self.expr(4)
+                        self.state = 143
+                        self.expr(6)
                         pass
 
              
-                self.state = 128
+                self.state = 148
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,9,self._ctx)
 
@@ -1377,34 +1504,34 @@ class calculadoraPrimeroMultParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 129
-            self.match(calculadoraPrimeroMultParser.T__6)
-            self.state = 130
-            self.match(calculadoraPrimeroMultParser.NEWLINE)
-            self.state = 136
-            self._errHandler.sync(self)
-            _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 132637786114) != 0):
-                self.state = 131
-                self.expr(0)
-                self.state = 132
-                self.match(calculadoraPrimeroMultParser.NEWLINE)
-                self.state = 138
-                self._errHandler.sync(self)
-                _la = self._input.LA(1)
-
-            self.state = 142
-            self._errHandler.sync(self)
-            _la = self._input.LA(1)
-            while _la==37:
-                self.state = 139
-                self.match(calculadoraPrimeroMultParser.NEWLINE)
-                self.state = 144
-                self._errHandler.sync(self)
-                _la = self._input.LA(1)
-
-            self.state = 145
+            self.state = 149
             self.match(calculadoraPrimeroMultParser.T__7)
+            self.state = 150
+            self.match(calculadoraPrimeroMultParser.NEWLINE)
+            self.state = 156
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 1061119590402) != 0):
+                self.state = 151
+                self.expr(0)
+                self.state = 152
+                self.match(calculadoraPrimeroMultParser.NEWLINE)
+                self.state = 158
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+
+            self.state = 162
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            while _la==40:
+                self.state = 159
+                self.match(calculadoraPrimeroMultParser.NEWLINE)
+                self.state = 164
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+
+            self.state = 165
+            self.match(calculadoraPrimeroMultParser.T__8)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1714,7 +1841,7 @@ class calculadoraPrimeroMultParser ( Parser ):
         self.enterRecursionRule(localctx, 8, self.RULE_cond, _p)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 178
+            self.state = 198
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,12,self._ctx)
             if la_ == 1:
@@ -1722,11 +1849,11 @@ class calculadoraPrimeroMultParser ( Parser ):
                 self._ctx = localctx
                 _prevctx = localctx
 
-                self.state = 148
+                self.state = 168
                 self.expr(0)
-                self.state = 149
-                self.match(calculadoraPrimeroMultParser.T__8)
-                self.state = 150
+                self.state = 169
+                self.match(calculadoraPrimeroMultParser.T__9)
+                self.state = 170
                 self.expr(0)
                 pass
 
@@ -1734,11 +1861,11 @@ class calculadoraPrimeroMultParser ( Parser ):
                 localctx = calculadoraPrimeroMultParser.GreaterThanContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 152
+                self.state = 172
                 self.expr(0)
-                self.state = 153
-                self.match(calculadoraPrimeroMultParser.T__9)
-                self.state = 154
+                self.state = 173
+                self.match(calculadoraPrimeroMultParser.T__10)
+                self.state = 174
                 self.expr(0)
                 pass
 
@@ -1746,11 +1873,11 @@ class calculadoraPrimeroMultParser ( Parser ):
                 localctx = calculadoraPrimeroMultParser.LessEqualThanContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 156
+                self.state = 176
                 self.expr(0)
-                self.state = 157
-                self.match(calculadoraPrimeroMultParser.T__10)
-                self.state = 158
+                self.state = 177
+                self.match(calculadoraPrimeroMultParser.T__11)
+                self.state = 178
                 self.expr(0)
                 pass
 
@@ -1758,11 +1885,11 @@ class calculadoraPrimeroMultParser ( Parser ):
                 localctx = calculadoraPrimeroMultParser.GreaterEqualThanContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 160
+                self.state = 180
                 self.expr(0)
-                self.state = 161
-                self.match(calculadoraPrimeroMultParser.T__11)
-                self.state = 162
+                self.state = 181
+                self.match(calculadoraPrimeroMultParser.T__12)
+                self.state = 182
                 self.expr(0)
                 pass
 
@@ -1770,11 +1897,11 @@ class calculadoraPrimeroMultParser ( Parser ):
                 localctx = calculadoraPrimeroMultParser.EqualContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 164
+                self.state = 184
                 self.expr(0)
-                self.state = 165
-                self.match(calculadoraPrimeroMultParser.T__12)
-                self.state = 166
+                self.state = 185
+                self.match(calculadoraPrimeroMultParser.T__13)
+                self.state = 186
                 self.expr(0)
                 pass
 
@@ -1782,11 +1909,11 @@ class calculadoraPrimeroMultParser ( Parser ):
                 localctx = calculadoraPrimeroMultParser.NotEqualContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 168
+                self.state = 188
                 self.expr(0)
-                self.state = 169
-                self.match(calculadoraPrimeroMultParser.T__13)
-                self.state = 170
+                self.state = 189
+                self.match(calculadoraPrimeroMultParser.T__14)
+                self.state = 190
                 self.expr(0)
                 pass
 
@@ -1794,9 +1921,9 @@ class calculadoraPrimeroMultParser ( Parser ):
                 localctx = calculadoraPrimeroMultParser.NotContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 172
-                self.match(calculadoraPrimeroMultParser.T__16)
-                self.state = 173
+                self.state = 192
+                self.match(calculadoraPrimeroMultParser.T__17)
+                self.state = 193
                 self.cond(2)
                 pass
 
@@ -1804,17 +1931,17 @@ class calculadoraPrimeroMultParser ( Parser ):
                 localctx = calculadoraPrimeroMultParser.ParensCondContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 174
+                self.state = 194
                 self.match(calculadoraPrimeroMultParser.T__0)
-                self.state = 175
+                self.state = 195
                 self.cond(0)
-                self.state = 176
+                self.state = 196
                 self.match(calculadoraPrimeroMultParser.T__1)
                 pass
 
 
             self._ctx.stop = self._input.LT(-1)
-            self.state = 188
+            self.state = 208
             self._errHandler.sync(self)
             _alt = self._interp.adaptivePredict(self._input,14,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
@@ -1822,37 +1949,37 @@ class calculadoraPrimeroMultParser ( Parser ):
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
-                    self.state = 186
+                    self.state = 206
                     self._errHandler.sync(self)
                     la_ = self._interp.adaptivePredict(self._input,13,self._ctx)
                     if la_ == 1:
                         localctx = calculadoraPrimeroMultParser.AndContext(self, calculadoraPrimeroMultParser.CondContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_cond)
-                        self.state = 180
+                        self.state = 200
                         if not self.precpred(self._ctx, 4):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 4)")
-                        self.state = 181
-                        self.match(calculadoraPrimeroMultParser.T__14)
-                        self.state = 182
+                        self.state = 201
+                        self.match(calculadoraPrimeroMultParser.T__15)
+                        self.state = 202
                         self.cond(5)
                         pass
 
                     elif la_ == 2:
                         localctx = calculadoraPrimeroMultParser.OrContext(self, calculadoraPrimeroMultParser.CondContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_cond)
-                        self.state = 183
+                        self.state = 203
                         if not self.precpred(self._ctx, 3):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 3)")
-                        self.state = 184
-                        self.match(calculadoraPrimeroMultParser.T__15)
-                        self.state = 185
+                        self.state = 204
+                        self.match(calculadoraPrimeroMultParser.T__16)
+                        self.state = 205
                         self.cond(4)
                         pass
 
              
-                self.state = 190
+                self.state = 210
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,14,self._ctx)
 
@@ -1906,24 +2033,24 @@ class calculadoraPrimeroMultParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 191
-            self.match(calculadoraPrimeroMultParser.T__17)
-            self.state = 192
+            self.state = 211
+            self.match(calculadoraPrimeroMultParser.T__18)
+            self.state = 212
             self.expr(0)
-            self.state = 197
+            self.state = 217
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==5:
-                self.state = 193
+                self.state = 213
                 self.match(calculadoraPrimeroMultParser.T__4)
-                self.state = 194
+                self.state = 214
                 self.expr(0)
-                self.state = 199
+                self.state = 219
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 200
-            self.match(calculadoraPrimeroMultParser.T__18)
+            self.state = 220
+            self.match(calculadoraPrimeroMultParser.T__19)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1947,19 +2074,19 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     def expr_sempred(self, localctx:ExprContext, predIndex:int):
             if predIndex == 0:
-                return self.precpred(self._ctx, 20)
+                return self.precpred(self._ctx, 22)
          
 
             if predIndex == 1:
-                return self.precpred(self._ctx, 19)
+                return self.precpred(self._ctx, 21)
          
 
             if predIndex == 2:
-                return self.precpred(self._ctx, 18)
+                return self.precpred(self._ctx, 20)
          
 
             if predIndex == 3:
-                return self.precpred(self._ctx, 3)
+                return self.precpred(self._ctx, 5)
          
 
     def cond_sempred(self, localctx:CondContext, predIndex:int):

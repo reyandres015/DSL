@@ -116,12 +116,30 @@ class calculadoraPrimeroMultListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#for.
+    def enterFor(self, ctx:calculadoraPrimeroMultParser.ForContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#for.
+    def exitFor(self, ctx:calculadoraPrimeroMultParser.ForContext):
+        pass
+
+
     # Enter a parse tree produced by calculadoraPrimeroMultParser#float.
     def enterFloat(self, ctx:calculadoraPrimeroMultParser.FloatContext):
         pass
 
     # Exit a parse tree produced by calculadoraPrimeroMultParser#float.
     def exitFloat(self, ctx:calculadoraPrimeroMultParser.FloatContext):
+        pass
+
+
+    # Enter a parse tree produced by calculadoraPrimeroMultParser#while.
+    def enterWhile(self, ctx:calculadoraPrimeroMultParser.WhileContext):
+        pass
+
+    # Exit a parse tree produced by calculadoraPrimeroMultParser#while.
+    def exitWhile(self, ctx:calculadoraPrimeroMultParser.WhileContext):
         pass
 
 

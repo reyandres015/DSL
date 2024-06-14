@@ -180,6 +180,15 @@ class EvalVisitor(calculadoraPrimeroMultVisitor):
         else:
             return self.visit(ctx.block(1))
 
+    def visitFor(self, ctx):
+        print(ctx.expr(0).getText(), ctx.expr(1).getText())
+        for _ in range(int(ctx.expr(0).getText()), int(ctx.expr(1).getText())):
+            self.visit(ctx.block())
+
+    def visitWhile(self, ctx):
+        while self.visit(ctx.cond()):
+            self.visit(ctx.block())
+
 
 def main():
     input_stream = FileStream("ejemplo.txt")
