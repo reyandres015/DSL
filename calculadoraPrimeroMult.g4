@@ -10,6 +10,8 @@ stat:
 expr:
 	expr op = ('*' | '/') expr						# MulDiv
 	| expr op = ('+' | '-') expr					# AddSub
+	| matrix '+' matrix ('+' matrix)*				# MatrixAdd
+	| matrix										# idMatrix
 	| FLOAT											# float
 	| INT											# int
 	| ID											# id
@@ -20,8 +22,9 @@ expr:
 	| expr MOD expr									# Modh
 	| RAIZ ('(' expr ')' | '(' expr ',' expr ')')	# raiz;
 
-MUL:
-	'*'; // Asigna un nombre de token a '*' utilizado anteriormente en la gramática
+matrix: '[' expr (',' expr)* ']';
+
+MUL: '*';
 DIV: '/';
 ADD: '+';
 SUB: '-';

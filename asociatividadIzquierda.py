@@ -79,6 +79,23 @@ class EvalVisitor(calculadoraPrimeroMultVisitor):
         else:
             right = self.visit(ctx.expr(1))
         return left ** (1/right)
+    
+    def visitMatrix(self, ctx):
+        text = ctx.getText()
+        text = text.replace('[', '')
+        text = text.replace(']', '')
+        text = text.replace(',','')
+        matrix = [[int(element) for element in row] for row in text]
+        return matrix
+
+    def visitMatrixAdd(self, ctx):
+        matrix1 = self.visit(ctx.matrix(0))
+        matrix2 = self.visit(ctx.matrix(1))
+
+        print(matrix1, matrix2)
+        # Sumar las matrices
+        result_matrix = [a + b for row1, row2 in zip(matrix1, matrix2) for a, b in zip(row1, row2)]
+        return result_matrix
 
 def main():
     input_stream = FileStream("ejemplo.txt")
