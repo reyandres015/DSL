@@ -33,12 +33,9 @@ pip3 install antlr4-python3-runtime
 ```
 
 ## Step 2: use `.g4` to generate parser and lexer 
-Nos dirijimos a la carpeta 'PrimeroMultiplicacion'
+
 ```bash
-cd PrimeroMultiplicacion
-```
-```bash
-antlr4 -Dlanguage=Python3 calculadoraPrimeroMult.g4 -visitor -o dist 
+antlr4 -Dlanguage=Python3 lenguaje.g4 -visitor -o dist 
 ```
 Use `-visitor` to generate Visitor Class
 Use `-o` to specify output path.
@@ -53,7 +50,7 @@ nano ejemplo.txt
 ## Step 4: Execute python file
 
 ```bash
-python3 asociatividadIzquierda.py
+python3 main.py
 ```
 
 # Docs

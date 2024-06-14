@@ -1,4 +1,4 @@
-# Generated from calculadoraPrimeroMult.g4 by ANTLR 4.13.1
+# Generated from lenguaje.g4 by ANTLR 4.13.1
 from antlr4 import *
 from io import StringIO
 import sys
@@ -120,7 +120,7 @@ def serializedATN():
         1,0,0,0,10,0,265,273,276,281,284,289,295,298,305,1,6,0,0
     ]
 
-class calculadoraPrimeroMultLexer(Lexer):
+class lenguajeLexer(Lexer):
 
     atn = ATNDeserializer().deserialize(serializedATN())
 
@@ -202,7 +202,7 @@ class calculadoraPrimeroMultLexer(Lexer):
                   "TAN", "MOD", "RAIZ", "CADENA", "ID", "INT", "FLOAT", 
                   "NEWLINE", "WS" ]
 
-    grammarFileName = "calculadoraPrimeroMult.g4"
+    grammarFileName = "lenguaje.g4"
 
     def __init__(self, input=None, output:TextIO = sys.stdout):
         super().__init__(input, output)

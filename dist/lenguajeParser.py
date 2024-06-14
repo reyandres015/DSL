@@ -1,4 +1,4 @@
-# Generated from calculadoraPrimeroMult.g4 by ANTLR 4.13.1
+# Generated from lenguaje.g4 by ANTLR 4.13.1
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -105,9 +105,9 @@ def serializedATN():
         183,185,195,201,237,245,247,256
     ]
 
-class calculadoraPrimeroMultParser ( Parser ):
+class lenguajeParser ( Parser ):
 
-    grammarFileName = "calculadoraPrimeroMult.g4"
+    grammarFileName = "lenguaje.g4"
 
     atn = ATNDeserializer().deserialize(serializedATN())
 
@@ -211,13 +211,13 @@ class calculadoraPrimeroMultParser ( Parser ):
 
         def stat(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.StatContext)
+                return self.getTypedRuleContexts(lenguajeParser.StatContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.StatContext,i)
+                return self.getTypedRuleContext(lenguajeParser.StatContext,i)
 
 
         def getRuleIndex(self):
-            return calculadoraPrimeroMultParser.RULE_prog
+            return lenguajeParser.RULE_prog
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterProg" ):
@@ -238,7 +238,7 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     def prog(self):
 
-        localctx = calculadoraPrimeroMultParser.ProgContext(self, self._ctx, self.state)
+        localctx = lenguajeParser.ProgContext(self, self._ctx, self.state)
         self.enterRule(localctx, 0, self.RULE_prog)
         self._la = 0 # Token type
         try:
@@ -273,7 +273,7 @@ class calculadoraPrimeroMultParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return calculadoraPrimeroMultParser.RULE_stat
+            return lenguajeParser.RULE_stat
 
      
         def copyFrom(self, ctx:ParserRuleContext):
@@ -283,12 +283,12 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class BlankContext(StatContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.StatContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.StatContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def NEWLINE(self):
-            return self.getToken(calculadoraPrimeroMultParser.NEWLINE, 0)
+            return self.getToken(lenguajeParser.NEWLINE, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterBlank" ):
@@ -307,15 +307,15 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class ExpressionContext(StatContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.StatContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.StatContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self):
-            return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,0)
+            return self.getTypedRuleContext(lenguajeParser.ExprContext,0)
 
         def NEWLINE(self):
-            return self.getToken(calculadoraPrimeroMultParser.NEWLINE, 0)
+            return self.getToken(lenguajeParser.NEWLINE, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterExpression" ):
@@ -335,25 +335,25 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     def stat(self):
 
-        localctx = calculadoraPrimeroMultParser.StatContext(self, self._ctx, self.state)
+        localctx = lenguajeParser.StatContext(self, self._ctx, self.state)
         self.enterRule(localctx, 2, self.RULE_stat)
         try:
             self.state = 21
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [1, 19, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 38, 39, 40, 42, 43, 44, 45, 46]:
-                localctx = calculadoraPrimeroMultParser.ExpressionContext(self, localctx)
+                localctx = lenguajeParser.ExpressionContext(self, localctx)
                 self.enterOuterAlt(localctx, 1)
                 self.state = 17
                 self.expr(0)
                 self.state = 18
-                self.match(calculadoraPrimeroMultParser.NEWLINE)
+                self.match(lenguajeParser.NEWLINE)
                 pass
             elif token in [47]:
-                localctx = calculadoraPrimeroMultParser.BlankContext(self, localctx)
+                localctx = lenguajeParser.BlankContext(self, localctx)
                 self.enterOuterAlt(localctx, 2)
                 self.state = 20
-                self.match(calculadoraPrimeroMultParser.NEWLINE)
+                self.match(lenguajeParser.NEWLINE)
                 pass
             else:
                 raise NoViableAltException(self)
@@ -376,7 +376,7 @@ class calculadoraPrimeroMultParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return calculadoraPrimeroMultParser.RULE_expr
+            return lenguajeParser.RULE_expr
 
      
         def copyFrom(self, ctx:ParserRuleContext):
@@ -385,21 +385,21 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class MatrixAddContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def matrix(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.MatrixContext)
+                return self.getTypedRuleContexts(lenguajeParser.MatrixContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.MatrixContext,i)
+                return self.getTypedRuleContext(lenguajeParser.MatrixContext,i)
 
         def ADD(self, i:int=None):
             if i is None:
-                return self.getTokens(calculadoraPrimeroMultParser.ADD)
+                return self.getTokens(lenguajeParser.ADD)
             else:
-                return self.getToken(calculadoraPrimeroMultParser.ADD, i)
+                return self.getToken(lenguajeParser.ADD, i)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterMatrixAdd" ):
@@ -418,12 +418,12 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class IdMatrixContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def matrix(self):
-            return self.getTypedRuleContext(calculadoraPrimeroMultParser.MatrixContext,0)
+            return self.getTypedRuleContext(lenguajeParser.MatrixContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -443,12 +443,12 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class ParensContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self):
-            return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,0)
+            return self.getTypedRuleContext(lenguajeParser.ExprContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -468,21 +468,21 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class MulDivContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.op = None # Token
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.ExprContext)
+                return self.getTypedRuleContexts(lenguajeParser.ExprContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,i)
+                return self.getTypedRuleContext(lenguajeParser.ExprContext,i)
 
         def MUL(self):
-            return self.getToken(calculadoraPrimeroMultParser.MUL, 0)
+            return self.getToken(lenguajeParser.MUL, 0)
         def DIV(self):
-            return self.getToken(calculadoraPrimeroMultParser.DIV, 0)
+            return self.getToken(lenguajeParser.DIV, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterMulDiv" ):
@@ -501,14 +501,14 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class CosContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def COS(self):
-            return self.getToken(calculadoraPrimeroMultParser.COS, 0)
+            return self.getToken(lenguajeParser.COS, 0)
         def expr(self):
-            return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,0)
+            return self.getTypedRuleContext(lenguajeParser.ExprContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -528,25 +528,25 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class ForContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def FOR(self):
-            return self.getToken(calculadoraPrimeroMultParser.FOR, 0)
+            return self.getToken(lenguajeParser.FOR, 0)
         def ID(self, i:int=None):
             if i is None:
-                return self.getTokens(calculadoraPrimeroMultParser.ID)
+                return self.getTokens(lenguajeParser.ID)
             else:
-                return self.getToken(calculadoraPrimeroMultParser.ID, i)
+                return self.getToken(lenguajeParser.ID, i)
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.ExprContext)
+                return self.getTypedRuleContexts(lenguajeParser.ExprContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,i)
+                return self.getTypedRuleContext(lenguajeParser.ExprContext,i)
 
         def block(self):
-            return self.getTypedRuleContext(calculadoraPrimeroMultParser.BlockContext,0)
+            return self.getTypedRuleContext(lenguajeParser.BlockContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -566,17 +566,17 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class PaintContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def PAINT(self):
-            return self.getToken(calculadoraPrimeroMultParser.PAINT, 0)
+            return self.getToken(lenguajeParser.PAINT, 0)
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.ExprContext)
+                return self.getTypedRuleContexts(lenguajeParser.ExprContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,i)
+                return self.getTypedRuleContext(lenguajeParser.ExprContext,i)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -596,12 +596,12 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class FloatContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def FLOAT(self):
-            return self.getToken(calculadoraPrimeroMultParser.FLOAT, 0)
+            return self.getToken(lenguajeParser.FLOAT, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterFloat" ):
@@ -620,17 +620,17 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class WhileContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def WHILE(self):
-            return self.getToken(calculadoraPrimeroMultParser.WHILE, 0)
+            return self.getToken(lenguajeParser.WHILE, 0)
         def cond(self):
-            return self.getTypedRuleContext(calculadoraPrimeroMultParser.CondContext,0)
+            return self.getTypedRuleContext(lenguajeParser.CondContext,0)
 
         def block(self):
-            return self.getTypedRuleContext(calculadoraPrimeroMultParser.BlockContext,0)
+            return self.getTypedRuleContext(lenguajeParser.BlockContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -650,14 +650,14 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class LeerContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def LEER(self):
-            return self.getToken(calculadoraPrimeroMultParser.LEER, 0)
+            return self.getToken(lenguajeParser.LEER, 0)
         def expr(self):
-            return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,0)
+            return self.getTypedRuleContext(lenguajeParser.ExprContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -677,14 +677,14 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class MatrixTransposedContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def TRANSPOSED(self):
-            return self.getToken(calculadoraPrimeroMultParser.TRANSPOSED, 0)
+            return self.getToken(lenguajeParser.TRANSPOSED, 0)
         def matrix(self):
-            return self.getTypedRuleContext(calculadoraPrimeroMultParser.MatrixContext,0)
+            return self.getTypedRuleContext(lenguajeParser.MatrixContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -704,17 +704,17 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class RaizContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def RAIZ(self):
-            return self.getToken(calculadoraPrimeroMultParser.RAIZ, 0)
+            return self.getToken(lenguajeParser.RAIZ, 0)
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.ExprContext)
+                return self.getTypedRuleContexts(lenguajeParser.ExprContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,i)
+                return self.getTypedRuleContext(lenguajeParser.ExprContext,i)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -734,17 +734,17 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class PaintBallContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def PAINTBALL(self):
-            return self.getToken(calculadoraPrimeroMultParser.PAINTBALL, 0)
+            return self.getToken(lenguajeParser.PAINTBALL, 0)
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.ExprContext)
+                return self.getTypedRuleContexts(lenguajeParser.ExprContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,i)
+                return self.getTypedRuleContext(lenguajeParser.ExprContext,i)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -764,23 +764,23 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class ConditionalIfContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def IF(self):
-            return self.getToken(calculadoraPrimeroMultParser.IF, 0)
+            return self.getToken(lenguajeParser.IF, 0)
         def cond(self):
-            return self.getTypedRuleContext(calculadoraPrimeroMultParser.CondContext,0)
+            return self.getTypedRuleContext(lenguajeParser.CondContext,0)
 
         def block(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.BlockContext)
+                return self.getTypedRuleContexts(lenguajeParser.BlockContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.BlockContext,i)
+                return self.getTypedRuleContext(lenguajeParser.BlockContext,i)
 
         def ELSE(self):
-            return self.getToken(calculadoraPrimeroMultParser.ELSE, 0)
+            return self.getToken(lenguajeParser.ELSE, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterConditionalIf" ):
@@ -799,17 +799,17 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class PaintBarsContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def PAINTBARS(self):
-            return self.getToken(calculadoraPrimeroMultParser.PAINTBARS, 0)
+            return self.getToken(lenguajeParser.PAINTBARS, 0)
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.ExprContext)
+                return self.getTypedRuleContexts(lenguajeParser.ExprContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,i)
+                return self.getTypedRuleContext(lenguajeParser.ExprContext,i)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -829,14 +829,14 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class SinContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def SIN(self):
-            return self.getToken(calculadoraPrimeroMultParser.SIN, 0)
+            return self.getToken(lenguajeParser.SIN, 0)
         def expr(self):
-            return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,0)
+            return self.getTypedRuleContext(lenguajeParser.ExprContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -856,12 +856,12 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class IdContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def ID(self):
-            return self.getToken(calculadoraPrimeroMultParser.ID, 0)
+            return self.getToken(lenguajeParser.ID, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterId" ):
@@ -880,21 +880,21 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class MatrixMultiplyContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def matrix(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.MatrixContext)
+                return self.getTypedRuleContexts(lenguajeParser.MatrixContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.MatrixContext,i)
+                return self.getTypedRuleContext(lenguajeParser.MatrixContext,i)
 
         def MUL(self, i:int=None):
             if i is None:
-                return self.getTokens(calculadoraPrimeroMultParser.MUL)
+                return self.getTokens(lenguajeParser.MUL)
             else:
-                return self.getToken(calculadoraPrimeroMultParser.MUL, i)
+                return self.getToken(lenguajeParser.MUL, i)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterMatrixMultiply" ):
@@ -913,14 +913,14 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class PrintExprContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def SHOW(self):
-            return self.getToken(calculadoraPrimeroMultParser.SHOW, 0)
+            return self.getToken(lenguajeParser.SHOW, 0)
         def expr(self):
-            return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,0)
+            return self.getTypedRuleContext(lenguajeParser.ExprContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -940,14 +940,14 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class TanContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def TAN(self):
-            return self.getToken(calculadoraPrimeroMultParser.TAN, 0)
+            return self.getToken(lenguajeParser.TAN, 0)
         def expr(self):
-            return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,0)
+            return self.getTypedRuleContext(lenguajeParser.ExprContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -967,18 +967,18 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class ModContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.ExprContext)
+                return self.getTypedRuleContexts(lenguajeParser.ExprContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,i)
+                return self.getTypedRuleContext(lenguajeParser.ExprContext,i)
 
         def MOD(self):
-            return self.getToken(calculadoraPrimeroMultParser.MOD, 0)
+            return self.getToken(lenguajeParser.MOD, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterMod" ):
@@ -997,21 +997,21 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class AddSubContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.op = None # Token
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.ExprContext)
+                return self.getTypedRuleContexts(lenguajeParser.ExprContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,i)
+                return self.getTypedRuleContext(lenguajeParser.ExprContext,i)
 
         def ADD(self):
-            return self.getToken(calculadoraPrimeroMultParser.ADD, 0)
+            return self.getToken(lenguajeParser.ADD, 0)
         def SUB(self):
-            return self.getToken(calculadoraPrimeroMultParser.SUB, 0)
+            return self.getToken(lenguajeParser.SUB, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterAddSub" ):
@@ -1030,21 +1030,21 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class MatrixSubtractContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def matrix(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.MatrixContext)
+                return self.getTypedRuleContexts(lenguajeParser.MatrixContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.MatrixContext,i)
+                return self.getTypedRuleContext(lenguajeParser.MatrixContext,i)
 
         def SUB(self, i:int=None):
             if i is None:
-                return self.getTokens(calculadoraPrimeroMultParser.SUB)
+                return self.getTokens(lenguajeParser.SUB)
             else:
-                return self.getToken(calculadoraPrimeroMultParser.SUB, i)
+                return self.getToken(lenguajeParser.SUB, i)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterMatrixSubtract" ):
@@ -1063,12 +1063,12 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class CadenaContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def CADENA(self):
-            return self.getToken(calculadoraPrimeroMultParser.CADENA, 0)
+            return self.getToken(lenguajeParser.CADENA, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterCadena" ):
@@ -1087,12 +1087,12 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class IntContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def INT(self):
-            return self.getToken(calculadoraPrimeroMultParser.INT, 0)
+            return self.getToken(lenguajeParser.INT, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterInt" ):
@@ -1111,14 +1111,14 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class PaintBrownieContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def BROWNIE(self):
-            return self.getToken(calculadoraPrimeroMultParser.BROWNIE, 0)
+            return self.getToken(lenguajeParser.BROWNIE, 0)
         def expr(self):
-            return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,0)
+            return self.getTypedRuleContext(lenguajeParser.ExprContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -1138,17 +1138,17 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class EscribirContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def ESCRIBIR(self):
-            return self.getToken(calculadoraPrimeroMultParser.ESCRIBIR, 0)
+            return self.getToken(lenguajeParser.ESCRIBIR, 0)
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.ExprContext)
+                return self.getTypedRuleContexts(lenguajeParser.ExprContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,i)
+                return self.getTypedRuleContext(lenguajeParser.ExprContext,i)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -1168,14 +1168,14 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class MatrixInverseContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def INVERSE(self):
-            return self.getToken(calculadoraPrimeroMultParser.INVERSE, 0)
+            return self.getToken(lenguajeParser.INVERSE, 0)
         def matrix(self):
-            return self.getTypedRuleContext(calculadoraPrimeroMultParser.MatrixContext,0)
+            return self.getTypedRuleContext(lenguajeParser.MatrixContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -1195,15 +1195,15 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class PowContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.ExprContext)
+                return self.getTypedRuleContexts(lenguajeParser.ExprContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,i)
+                return self.getTypedRuleContext(lenguajeParser.ExprContext,i)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -1223,14 +1223,14 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class AssignContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def ID(self):
-            return self.getToken(calculadoraPrimeroMultParser.ID, 0)
+            return self.getToken(lenguajeParser.ID, 0)
         def expr(self):
-            return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,0)
+            return self.getTypedRuleContext(lenguajeParser.ExprContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -1252,7 +1252,7 @@ class calculadoraPrimeroMultParser ( Parser ):
     def expr(self, _p:int=0):
         _parentctx = self._ctx
         _parentState = self.state
-        localctx = calculadoraPrimeroMultParser.ExprContext(self, self._ctx, _parentState)
+        localctx = lenguajeParser.ExprContext(self, self._ctx, _parentState)
         _prevctx = localctx
         _startState = 4
         self.enterRecursionRule(localctx, 4, self.RULE_expr, _p)
@@ -1263,22 +1263,22 @@ class calculadoraPrimeroMultParser ( Parser ):
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,7,self._ctx)
             if la_ == 1:
-                localctx = calculadoraPrimeroMultParser.PrintExprContext(self, localctx)
+                localctx = lenguajeParser.PrintExprContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
 
                 self.state = 24
-                self.match(calculadoraPrimeroMultParser.SHOW)
+                self.match(lenguajeParser.SHOW)
                 self.state = 25
-                self.match(calculadoraPrimeroMultParser.T__0)
+                self.match(lenguajeParser.T__0)
                 self.state = 26
                 self.expr(0)
                 self.state = 27
-                self.match(calculadoraPrimeroMultParser.T__1)
+                self.match(lenguajeParser.T__1)
                 pass
 
             elif la_ == 2:
-                localctx = calculadoraPrimeroMultParser.MatrixAddContext(self, localctx)
+                localctx = lenguajeParser.MatrixAddContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 29
@@ -1289,7 +1289,7 @@ class calculadoraPrimeroMultParser ( Parser ):
                 while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                     if _alt == 1:
                         self.state = 30
-                        self.match(calculadoraPrimeroMultParser.ADD)
+                        self.match(lenguajeParser.ADD)
                         self.state = 31
                         self.matrix()
 
@@ -1302,7 +1302,7 @@ class calculadoraPrimeroMultParser ( Parser ):
                 pass
 
             elif la_ == 3:
-                localctx = calculadoraPrimeroMultParser.MatrixSubtractContext(self, localctx)
+                localctx = lenguajeParser.MatrixSubtractContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 36
@@ -1313,7 +1313,7 @@ class calculadoraPrimeroMultParser ( Parser ):
                 while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                     if _alt == 1:
                         self.state = 37
-                        self.match(calculadoraPrimeroMultParser.SUB)
+                        self.match(lenguajeParser.SUB)
                         self.state = 38
                         self.matrix()
 
@@ -1326,7 +1326,7 @@ class calculadoraPrimeroMultParser ( Parser ):
                 pass
 
             elif la_ == 4:
-                localctx = calculadoraPrimeroMultParser.MatrixMultiplyContext(self, localctx)
+                localctx = lenguajeParser.MatrixMultiplyContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 43
@@ -1337,7 +1337,7 @@ class calculadoraPrimeroMultParser ( Parser ):
                 while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                     if _alt == 1:
                         self.state = 44
-                        self.match(calculadoraPrimeroMultParser.MUL)
+                        self.match(lenguajeParser.MUL)
                         self.state = 45
                         self.matrix()
 
@@ -1350,35 +1350,35 @@ class calculadoraPrimeroMultParser ( Parser ):
                 pass
 
             elif la_ == 5:
-                localctx = calculadoraPrimeroMultParser.MatrixInverseContext(self, localctx)
+                localctx = lenguajeParser.MatrixInverseContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 50
-                self.match(calculadoraPrimeroMultParser.INVERSE)
+                self.match(lenguajeParser.INVERSE)
                 self.state = 51
-                self.match(calculadoraPrimeroMultParser.T__0)
+                self.match(lenguajeParser.T__0)
                 self.state = 52
                 self.matrix()
                 self.state = 53
-                self.match(calculadoraPrimeroMultParser.T__1)
+                self.match(lenguajeParser.T__1)
                 pass
 
             elif la_ == 6:
-                localctx = calculadoraPrimeroMultParser.MatrixTransposedContext(self, localctx)
+                localctx = lenguajeParser.MatrixTransposedContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 55
-                self.match(calculadoraPrimeroMultParser.TRANSPOSED)
+                self.match(lenguajeParser.TRANSPOSED)
                 self.state = 56
-                self.match(calculadoraPrimeroMultParser.T__0)
+                self.match(lenguajeParser.T__0)
                 self.state = 57
                 self.matrix()
                 self.state = 58
-                self.match(calculadoraPrimeroMultParser.T__1)
+                self.match(lenguajeParser.T__1)
                 pass
 
             elif la_ == 7:
-                localctx = calculadoraPrimeroMultParser.IdMatrixContext(self, localctx)
+                localctx = lenguajeParser.IdMatrixContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 60
@@ -1386,151 +1386,151 @@ class calculadoraPrimeroMultParser ( Parser ):
                 pass
 
             elif la_ == 8:
-                localctx = calculadoraPrimeroMultParser.CadenaContext(self, localctx)
+                localctx = lenguajeParser.CadenaContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 61
-                self.match(calculadoraPrimeroMultParser.CADENA)
+                self.match(lenguajeParser.CADENA)
                 pass
 
             elif la_ == 9:
-                localctx = calculadoraPrimeroMultParser.FloatContext(self, localctx)
+                localctx = lenguajeParser.FloatContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 62
-                self.match(calculadoraPrimeroMultParser.FLOAT)
+                self.match(lenguajeParser.FLOAT)
                 pass
 
             elif la_ == 10:
-                localctx = calculadoraPrimeroMultParser.IntContext(self, localctx)
+                localctx = lenguajeParser.IntContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 63
-                self.match(calculadoraPrimeroMultParser.INT)
+                self.match(lenguajeParser.INT)
                 pass
 
             elif la_ == 11:
-                localctx = calculadoraPrimeroMultParser.IdContext(self, localctx)
+                localctx = lenguajeParser.IdContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 64
-                self.match(calculadoraPrimeroMultParser.ID)
+                self.match(lenguajeParser.ID)
                 pass
 
             elif la_ == 12:
-                localctx = calculadoraPrimeroMultParser.AssignContext(self, localctx)
+                localctx = lenguajeParser.AssignContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 65
-                self.match(calculadoraPrimeroMultParser.ID)
+                self.match(lenguajeParser.ID)
                 self.state = 66
-                self.match(calculadoraPrimeroMultParser.T__3)
+                self.match(lenguajeParser.T__3)
                 self.state = 67
                 self.expr(16)
                 pass
 
             elif la_ == 13:
-                localctx = calculadoraPrimeroMultParser.ParensContext(self, localctx)
+                localctx = lenguajeParser.ParensContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 68
-                self.match(calculadoraPrimeroMultParser.T__0)
+                self.match(lenguajeParser.T__0)
                 self.state = 69
                 self.expr(0)
                 self.state = 70
-                self.match(calculadoraPrimeroMultParser.T__1)
+                self.match(lenguajeParser.T__1)
                 pass
 
             elif la_ == 14:
-                localctx = calculadoraPrimeroMultParser.SinContext(self, localctx)
+                localctx = lenguajeParser.SinContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 72
-                self.match(calculadoraPrimeroMultParser.SIN)
+                self.match(lenguajeParser.SIN)
                 self.state = 73
-                self.match(calculadoraPrimeroMultParser.T__0)
+                self.match(lenguajeParser.T__0)
                 self.state = 74
                 self.expr(0)
                 self.state = 75
-                self.match(calculadoraPrimeroMultParser.T__1)
+                self.match(lenguajeParser.T__1)
                 pass
 
             elif la_ == 15:
-                localctx = calculadoraPrimeroMultParser.CosContext(self, localctx)
+                localctx = lenguajeParser.CosContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 77
-                self.match(calculadoraPrimeroMultParser.COS)
+                self.match(lenguajeParser.COS)
                 self.state = 78
-                self.match(calculadoraPrimeroMultParser.T__0)
+                self.match(lenguajeParser.T__0)
                 self.state = 79
                 self.expr(0)
                 self.state = 80
-                self.match(calculadoraPrimeroMultParser.T__1)
+                self.match(lenguajeParser.T__1)
                 pass
 
             elif la_ == 16:
-                localctx = calculadoraPrimeroMultParser.TanContext(self, localctx)
+                localctx = lenguajeParser.TanContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 82
-                self.match(calculadoraPrimeroMultParser.TAN)
+                self.match(lenguajeParser.TAN)
                 self.state = 83
-                self.match(calculadoraPrimeroMultParser.T__0)
+                self.match(lenguajeParser.T__0)
                 self.state = 84
                 self.expr(0)
                 self.state = 85
-                self.match(calculadoraPrimeroMultParser.T__1)
+                self.match(lenguajeParser.T__1)
                 pass
 
             elif la_ == 17:
-                localctx = calculadoraPrimeroMultParser.RaizContext(self, localctx)
+                localctx = lenguajeParser.RaizContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 87
-                self.match(calculadoraPrimeroMultParser.RAIZ)
+                self.match(lenguajeParser.RAIZ)
                 self.state = 98
                 self._errHandler.sync(self)
                 la_ = self._interp.adaptivePredict(self._input,5,self._ctx)
                 if la_ == 1:
                     self.state = 88
-                    self.match(calculadoraPrimeroMultParser.T__0)
+                    self.match(lenguajeParser.T__0)
                     self.state = 89
                     self.expr(0)
                     self.state = 90
-                    self.match(calculadoraPrimeroMultParser.T__1)
+                    self.match(lenguajeParser.T__1)
                     pass
 
                 elif la_ == 2:
                     self.state = 92
-                    self.match(calculadoraPrimeroMultParser.T__0)
+                    self.match(lenguajeParser.T__0)
                     self.state = 93
                     self.expr(0)
                     self.state = 94
-                    self.match(calculadoraPrimeroMultParser.T__4)
+                    self.match(lenguajeParser.T__4)
                     self.state = 95
                     self.expr(0)
                     self.state = 96
-                    self.match(calculadoraPrimeroMultParser.T__1)
+                    self.match(lenguajeParser.T__1)
                     pass
 
 
                 pass
 
             elif la_ == 18:
-                localctx = calculadoraPrimeroMultParser.ConditionalIfContext(self, localctx)
+                localctx = lenguajeParser.ConditionalIfContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 100
-                self.match(calculadoraPrimeroMultParser.IF)
+                self.match(lenguajeParser.IF)
                 self.state = 101
-                self.match(calculadoraPrimeroMultParser.T__0)
+                self.match(lenguajeParser.T__0)
                 self.state = 102
                 self.cond(0)
                 self.state = 103
-                self.match(calculadoraPrimeroMultParser.T__1)
+                self.match(lenguajeParser.T__1)
                 self.state = 104
-                self.match(calculadoraPrimeroMultParser.T__5)
+                self.match(lenguajeParser.T__5)
                 self.state = 105
                 self.block()
                 self.state = 109
@@ -1538,9 +1538,9 @@ class calculadoraPrimeroMultParser ( Parser ):
                 la_ = self._interp.adaptivePredict(self._input,6,self._ctx)
                 if la_ == 1:
                     self.state = 106
-                    self.match(calculadoraPrimeroMultParser.ELSE)
+                    self.match(lenguajeParser.ELSE)
                     self.state = 107
-                    self.match(calculadoraPrimeroMultParser.T__5)
+                    self.match(lenguajeParser.T__5)
                     self.state = 108
                     self.block()
 
@@ -1548,151 +1548,151 @@ class calculadoraPrimeroMultParser ( Parser ):
                 pass
 
             elif la_ == 19:
-                localctx = calculadoraPrimeroMultParser.ForContext(self, localctx)
+                localctx = lenguajeParser.ForContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 111
-                self.match(calculadoraPrimeroMultParser.FOR)
+                self.match(lenguajeParser.FOR)
                 self.state = 112
-                self.match(calculadoraPrimeroMultParser.T__0)
+                self.match(lenguajeParser.T__0)
                 self.state = 113
-                self.match(calculadoraPrimeroMultParser.ID)
+                self.match(lenguajeParser.ID)
                 self.state = 114
-                self.match(calculadoraPrimeroMultParser.T__3)
+                self.match(lenguajeParser.T__3)
                 self.state = 115
                 self.expr(0)
                 self.state = 116
-                self.match(calculadoraPrimeroMultParser.T__6)
+                self.match(lenguajeParser.T__6)
                 self.state = 117
-                self.match(calculadoraPrimeroMultParser.ID)
+                self.match(lenguajeParser.ID)
                 self.state = 118
-                self.match(calculadoraPrimeroMultParser.T__3)
+                self.match(lenguajeParser.T__3)
                 self.state = 119
                 self.expr(0)
                 self.state = 120
-                self.match(calculadoraPrimeroMultParser.T__1)
+                self.match(lenguajeParser.T__1)
                 self.state = 121
-                self.match(calculadoraPrimeroMultParser.T__5)
+                self.match(lenguajeParser.T__5)
                 self.state = 122
                 self.block()
                 pass
 
             elif la_ == 20:
-                localctx = calculadoraPrimeroMultParser.WhileContext(self, localctx)
+                localctx = lenguajeParser.WhileContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 124
-                self.match(calculadoraPrimeroMultParser.WHILE)
+                self.match(lenguajeParser.WHILE)
                 self.state = 125
-                self.match(calculadoraPrimeroMultParser.T__0)
+                self.match(lenguajeParser.T__0)
                 self.state = 126
                 self.cond(0)
                 self.state = 127
-                self.match(calculadoraPrimeroMultParser.T__1)
+                self.match(lenguajeParser.T__1)
                 self.state = 128
-                self.match(calculadoraPrimeroMultParser.T__5)
+                self.match(lenguajeParser.T__5)
                 self.state = 129
                 self.block()
                 pass
 
             elif la_ == 21:
-                localctx = calculadoraPrimeroMultParser.PaintContext(self, localctx)
+                localctx = lenguajeParser.PaintContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 131
-                self.match(calculadoraPrimeroMultParser.PAINT)
+                self.match(lenguajeParser.PAINT)
                 self.state = 132
-                self.match(calculadoraPrimeroMultParser.T__0)
+                self.match(lenguajeParser.T__0)
                 self.state = 133
                 self.expr(0)
                 self.state = 134
-                self.match(calculadoraPrimeroMultParser.T__4)
+                self.match(lenguajeParser.T__4)
                 self.state = 135
                 self.expr(0)
                 self.state = 136
-                self.match(calculadoraPrimeroMultParser.T__1)
+                self.match(lenguajeParser.T__1)
                 pass
 
             elif la_ == 22:
-                localctx = calculadoraPrimeroMultParser.PaintBallContext(self, localctx)
+                localctx = lenguajeParser.PaintBallContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 138
-                self.match(calculadoraPrimeroMultParser.PAINTBALL)
+                self.match(lenguajeParser.PAINTBALL)
                 self.state = 139
-                self.match(calculadoraPrimeroMultParser.T__0)
+                self.match(lenguajeParser.T__0)
                 self.state = 140
                 self.expr(0)
                 self.state = 141
-                self.match(calculadoraPrimeroMultParser.T__4)
+                self.match(lenguajeParser.T__4)
                 self.state = 142
                 self.expr(0)
                 self.state = 143
-                self.match(calculadoraPrimeroMultParser.T__1)
+                self.match(lenguajeParser.T__1)
                 pass
 
             elif la_ == 23:
-                localctx = calculadoraPrimeroMultParser.PaintBarsContext(self, localctx)
+                localctx = lenguajeParser.PaintBarsContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 145
-                self.match(calculadoraPrimeroMultParser.PAINTBARS)
+                self.match(lenguajeParser.PAINTBARS)
                 self.state = 146
-                self.match(calculadoraPrimeroMultParser.T__0)
+                self.match(lenguajeParser.T__0)
                 self.state = 147
                 self.expr(0)
                 self.state = 148
-                self.match(calculadoraPrimeroMultParser.T__4)
+                self.match(lenguajeParser.T__4)
                 self.state = 149
                 self.expr(0)
                 self.state = 150
-                self.match(calculadoraPrimeroMultParser.T__1)
+                self.match(lenguajeParser.T__1)
                 pass
 
             elif la_ == 24:
-                localctx = calculadoraPrimeroMultParser.PaintBrownieContext(self, localctx)
+                localctx = lenguajeParser.PaintBrownieContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 152
-                self.match(calculadoraPrimeroMultParser.BROWNIE)
+                self.match(lenguajeParser.BROWNIE)
                 self.state = 153
-                self.match(calculadoraPrimeroMultParser.T__0)
+                self.match(lenguajeParser.T__0)
                 self.state = 154
                 self.expr(0)
                 self.state = 155
-                self.match(calculadoraPrimeroMultParser.T__1)
+                self.match(lenguajeParser.T__1)
                 pass
 
             elif la_ == 25:
-                localctx = calculadoraPrimeroMultParser.LeerContext(self, localctx)
+                localctx = lenguajeParser.LeerContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 157
-                self.match(calculadoraPrimeroMultParser.LEER)
+                self.match(lenguajeParser.LEER)
                 self.state = 158
-                self.match(calculadoraPrimeroMultParser.T__0)
+                self.match(lenguajeParser.T__0)
                 self.state = 159
                 self.expr(0)
                 self.state = 160
-                self.match(calculadoraPrimeroMultParser.T__1)
+                self.match(lenguajeParser.T__1)
                 pass
 
             elif la_ == 26:
-                localctx = calculadoraPrimeroMultParser.EscribirContext(self, localctx)
+                localctx = lenguajeParser.EscribirContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 162
-                self.match(calculadoraPrimeroMultParser.ESCRIBIR)
+                self.match(lenguajeParser.ESCRIBIR)
                 self.state = 163
-                self.match(calculadoraPrimeroMultParser.T__0)
+                self.match(lenguajeParser.T__0)
                 self.state = 164
                 self.expr(0)
                 self.state = 165
-                self.match(calculadoraPrimeroMultParser.T__4)
+                self.match(lenguajeParser.T__4)
                 self.state = 166
                 self.expr(0)
                 self.state = 167
-                self.match(calculadoraPrimeroMultParser.T__1)
+                self.match(lenguajeParser.T__1)
                 pass
 
 
@@ -1709,7 +1709,7 @@ class calculadoraPrimeroMultParser ( Parser ):
                     self._errHandler.sync(self)
                     la_ = self._interp.adaptivePredict(self._input,8,self._ctx)
                     if la_ == 1:
-                        localctx = calculadoraPrimeroMultParser.MulDivContext(self, calculadoraPrimeroMultParser.ExprContext(self, _parentctx, _parentState))
+                        localctx = lenguajeParser.MulDivContext(self, lenguajeParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
                         self.state = 171
                         if not self.precpred(self._ctx, 29):
@@ -1728,7 +1728,7 @@ class calculadoraPrimeroMultParser ( Parser ):
                         pass
 
                     elif la_ == 2:
-                        localctx = calculadoraPrimeroMultParser.AddSubContext(self, calculadoraPrimeroMultParser.ExprContext(self, _parentctx, _parentState))
+                        localctx = lenguajeParser.AddSubContext(self, lenguajeParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
                         self.state = 174
                         if not self.precpred(self._ctx, 28):
@@ -1747,27 +1747,27 @@ class calculadoraPrimeroMultParser ( Parser ):
                         pass
 
                     elif la_ == 3:
-                        localctx = calculadoraPrimeroMultParser.PowContext(self, calculadoraPrimeroMultParser.ExprContext(self, _parentctx, _parentState))
+                        localctx = lenguajeParser.PowContext(self, lenguajeParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
                         self.state = 177
                         if not self.precpred(self._ctx, 27):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 27)")
                         self.state = 178
-                        self.match(calculadoraPrimeroMultParser.T__2)
+                        self.match(lenguajeParser.T__2)
                         self.state = 179
                         self.expr(28)
                         pass
 
                     elif la_ == 4:
-                        localctx = calculadoraPrimeroMultParser.ModContext(self, calculadoraPrimeroMultParser.ExprContext(self, _parentctx, _parentState))
+                        localctx = lenguajeParser.ModContext(self, lenguajeParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
                         self.state = 180
                         if not self.precpred(self._ctx, 11):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 11)")
                         self.state = 181
-                        self.match(calculadoraPrimeroMultParser.MOD)
+                        self.match(lenguajeParser.MOD)
                         self.state = 182
                         self.expr(12)
                         pass
@@ -1795,19 +1795,19 @@ class calculadoraPrimeroMultParser ( Parser ):
 
         def NEWLINE(self, i:int=None):
             if i is None:
-                return self.getTokens(calculadoraPrimeroMultParser.NEWLINE)
+                return self.getTokens(lenguajeParser.NEWLINE)
             else:
-                return self.getToken(calculadoraPrimeroMultParser.NEWLINE, i)
+                return self.getToken(lenguajeParser.NEWLINE, i)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.ExprContext)
+                return self.getTypedRuleContexts(lenguajeParser.ExprContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,i)
+                return self.getTypedRuleContext(lenguajeParser.ExprContext,i)
 
 
         def getRuleIndex(self):
-            return calculadoraPrimeroMultParser.RULE_block
+            return lenguajeParser.RULE_block
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterBlock" ):
@@ -1828,15 +1828,15 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     def block(self):
 
-        localctx = calculadoraPrimeroMultParser.BlockContext(self, self._ctx, self.state)
+        localctx = lenguajeParser.BlockContext(self, self._ctx, self.state)
         self.enterRule(localctx, 6, self.RULE_block)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 188
-            self.match(calculadoraPrimeroMultParser.T__7)
+            self.match(lenguajeParser.T__7)
             self.state = 189
-            self.match(calculadoraPrimeroMultParser.NEWLINE)
+            self.match(lenguajeParser.NEWLINE)
             self.state = 195
             self._errHandler.sync(self)
             _la = self._input.LA(1)
@@ -1844,7 +1844,7 @@ class calculadoraPrimeroMultParser ( Parser ):
                 self.state = 190
                 self.expr(0)
                 self.state = 191
-                self.match(calculadoraPrimeroMultParser.NEWLINE)
+                self.match(lenguajeParser.NEWLINE)
                 self.state = 197
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
@@ -1854,13 +1854,13 @@ class calculadoraPrimeroMultParser ( Parser ):
             _la = self._input.LA(1)
             while _la==47:
                 self.state = 198
-                self.match(calculadoraPrimeroMultParser.NEWLINE)
+                self.match(lenguajeParser.NEWLINE)
                 self.state = 203
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
             self.state = 204
-            self.match(calculadoraPrimeroMultParser.T__8)
+            self.match(lenguajeParser.T__8)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1879,7 +1879,7 @@ class calculadoraPrimeroMultParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return calculadoraPrimeroMultParser.RULE_cond
+            return lenguajeParser.RULE_cond
 
      
         def copyFrom(self, ctx:ParserRuleContext):
@@ -1888,15 +1888,15 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class EqualContext(CondContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.CondContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.CondContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.ExprContext)
+                return self.getTypedRuleContexts(lenguajeParser.ExprContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,i)
+                return self.getTypedRuleContext(lenguajeParser.ExprContext,i)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -1916,12 +1916,12 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class NotContext(CondContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.CondContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.CondContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def cond(self):
-            return self.getTypedRuleContext(calculadoraPrimeroMultParser.CondContext,0)
+            return self.getTypedRuleContext(lenguajeParser.CondContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -1941,15 +1941,15 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class GreaterEqualThanContext(CondContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.CondContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.CondContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.ExprContext)
+                return self.getTypedRuleContexts(lenguajeParser.ExprContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,i)
+                return self.getTypedRuleContext(lenguajeParser.ExprContext,i)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -1969,15 +1969,15 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class OrContext(CondContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.CondContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.CondContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def cond(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.CondContext)
+                return self.getTypedRuleContexts(lenguajeParser.CondContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.CondContext,i)
+                return self.getTypedRuleContext(lenguajeParser.CondContext,i)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -1997,15 +1997,15 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class AndContext(CondContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.CondContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.CondContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def cond(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.CondContext)
+                return self.getTypedRuleContexts(lenguajeParser.CondContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.CondContext,i)
+                return self.getTypedRuleContext(lenguajeParser.CondContext,i)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -2025,15 +2025,15 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class LessThanContext(CondContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.CondContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.CondContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.ExprContext)
+                return self.getTypedRuleContexts(lenguajeParser.ExprContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,i)
+                return self.getTypedRuleContext(lenguajeParser.ExprContext,i)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -2053,15 +2053,15 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class NotEqualContext(CondContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.CondContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.CondContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.ExprContext)
+                return self.getTypedRuleContexts(lenguajeParser.ExprContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,i)
+                return self.getTypedRuleContext(lenguajeParser.ExprContext,i)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -2081,15 +2081,15 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class LessEqualThanContext(CondContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.CondContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.CondContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.ExprContext)
+                return self.getTypedRuleContexts(lenguajeParser.ExprContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,i)
+                return self.getTypedRuleContext(lenguajeParser.ExprContext,i)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -2109,15 +2109,15 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class GreaterThanContext(CondContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.CondContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.CondContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.ExprContext)
+                return self.getTypedRuleContexts(lenguajeParser.ExprContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,i)
+                return self.getTypedRuleContext(lenguajeParser.ExprContext,i)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -2137,12 +2137,12 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     class ParensCondContext(CondContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a calculadoraPrimeroMultParser.CondContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a lenguajeParser.CondContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def cond(self):
-            return self.getTypedRuleContext(calculadoraPrimeroMultParser.CondContext,0)
+            return self.getTypedRuleContext(lenguajeParser.CondContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -2164,7 +2164,7 @@ class calculadoraPrimeroMultParser ( Parser ):
     def cond(self, _p:int=0):
         _parentctx = self._ctx
         _parentState = self.state
-        localctx = calculadoraPrimeroMultParser.CondContext(self, self._ctx, _parentState)
+        localctx = lenguajeParser.CondContext(self, self._ctx, _parentState)
         _prevctx = localctx
         _startState = 8
         self.enterRecursionRule(localctx, 8, self.RULE_cond, _p)
@@ -2174,98 +2174,98 @@ class calculadoraPrimeroMultParser ( Parser ):
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,12,self._ctx)
             if la_ == 1:
-                localctx = calculadoraPrimeroMultParser.LessThanContext(self, localctx)
+                localctx = lenguajeParser.LessThanContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
 
                 self.state = 207
                 self.expr(0)
                 self.state = 208
-                self.match(calculadoraPrimeroMultParser.T__9)
+                self.match(lenguajeParser.T__9)
                 self.state = 209
                 self.expr(0)
                 pass
 
             elif la_ == 2:
-                localctx = calculadoraPrimeroMultParser.GreaterThanContext(self, localctx)
+                localctx = lenguajeParser.GreaterThanContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 211
                 self.expr(0)
                 self.state = 212
-                self.match(calculadoraPrimeroMultParser.T__10)
+                self.match(lenguajeParser.T__10)
                 self.state = 213
                 self.expr(0)
                 pass
 
             elif la_ == 3:
-                localctx = calculadoraPrimeroMultParser.LessEqualThanContext(self, localctx)
+                localctx = lenguajeParser.LessEqualThanContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 215
                 self.expr(0)
                 self.state = 216
-                self.match(calculadoraPrimeroMultParser.T__11)
+                self.match(lenguajeParser.T__11)
                 self.state = 217
                 self.expr(0)
                 pass
 
             elif la_ == 4:
-                localctx = calculadoraPrimeroMultParser.GreaterEqualThanContext(self, localctx)
+                localctx = lenguajeParser.GreaterEqualThanContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 219
                 self.expr(0)
                 self.state = 220
-                self.match(calculadoraPrimeroMultParser.T__12)
+                self.match(lenguajeParser.T__12)
                 self.state = 221
                 self.expr(0)
                 pass
 
             elif la_ == 5:
-                localctx = calculadoraPrimeroMultParser.EqualContext(self, localctx)
+                localctx = lenguajeParser.EqualContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 223
                 self.expr(0)
                 self.state = 224
-                self.match(calculadoraPrimeroMultParser.T__13)
+                self.match(lenguajeParser.T__13)
                 self.state = 225
                 self.expr(0)
                 pass
 
             elif la_ == 6:
-                localctx = calculadoraPrimeroMultParser.NotEqualContext(self, localctx)
+                localctx = lenguajeParser.NotEqualContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 227
                 self.expr(0)
                 self.state = 228
-                self.match(calculadoraPrimeroMultParser.T__14)
+                self.match(lenguajeParser.T__14)
                 self.state = 229
                 self.expr(0)
                 pass
 
             elif la_ == 7:
-                localctx = calculadoraPrimeroMultParser.NotContext(self, localctx)
+                localctx = lenguajeParser.NotContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 231
-                self.match(calculadoraPrimeroMultParser.T__17)
+                self.match(lenguajeParser.T__17)
                 self.state = 232
                 self.cond(2)
                 pass
 
             elif la_ == 8:
-                localctx = calculadoraPrimeroMultParser.ParensCondContext(self, localctx)
+                localctx = lenguajeParser.ParensCondContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 233
-                self.match(calculadoraPrimeroMultParser.T__0)
+                self.match(lenguajeParser.T__0)
                 self.state = 234
                 self.cond(0)
                 self.state = 235
-                self.match(calculadoraPrimeroMultParser.T__1)
+                self.match(lenguajeParser.T__1)
                 pass
 
 
@@ -2282,27 +2282,27 @@ class calculadoraPrimeroMultParser ( Parser ):
                     self._errHandler.sync(self)
                     la_ = self._interp.adaptivePredict(self._input,13,self._ctx)
                     if la_ == 1:
-                        localctx = calculadoraPrimeroMultParser.AndContext(self, calculadoraPrimeroMultParser.CondContext(self, _parentctx, _parentState))
+                        localctx = lenguajeParser.AndContext(self, lenguajeParser.CondContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_cond)
                         self.state = 239
                         if not self.precpred(self._ctx, 4):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 4)")
                         self.state = 240
-                        self.match(calculadoraPrimeroMultParser.T__15)
+                        self.match(lenguajeParser.T__15)
                         self.state = 241
                         self.cond(5)
                         pass
 
                     elif la_ == 2:
-                        localctx = calculadoraPrimeroMultParser.OrContext(self, calculadoraPrimeroMultParser.CondContext(self, _parentctx, _parentState))
+                        localctx = lenguajeParser.OrContext(self, lenguajeParser.CondContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_cond)
                         self.state = 242
                         if not self.precpred(self._ctx, 3):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 3)")
                         self.state = 243
-                        self.match(calculadoraPrimeroMultParser.T__16)
+                        self.match(lenguajeParser.T__16)
                         self.state = 244
                         self.cond(4)
                         pass
@@ -2330,13 +2330,13 @@ class calculadoraPrimeroMultParser ( Parser ):
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(calculadoraPrimeroMultParser.ExprContext)
+                return self.getTypedRuleContexts(lenguajeParser.ExprContext)
             else:
-                return self.getTypedRuleContext(calculadoraPrimeroMultParser.ExprContext,i)
+                return self.getTypedRuleContext(lenguajeParser.ExprContext,i)
 
 
         def getRuleIndex(self):
-            return calculadoraPrimeroMultParser.RULE_matrix
+            return lenguajeParser.RULE_matrix
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterMatrix" ):
@@ -2357,13 +2357,13 @@ class calculadoraPrimeroMultParser ( Parser ):
 
     def matrix(self):
 
-        localctx = calculadoraPrimeroMultParser.MatrixContext(self, self._ctx, self.state)
+        localctx = lenguajeParser.MatrixContext(self, self._ctx, self.state)
         self.enterRule(localctx, 10, self.RULE_matrix)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 250
-            self.match(calculadoraPrimeroMultParser.T__18)
+            self.match(lenguajeParser.T__18)
             self.state = 251
             self.expr(0)
             self.state = 256
@@ -2371,7 +2371,7 @@ class calculadoraPrimeroMultParser ( Parser ):
             _la = self._input.LA(1)
             while _la==5:
                 self.state = 252
-                self.match(calculadoraPrimeroMultParser.T__4)
+                self.match(lenguajeParser.T__4)
                 self.state = 253
                 self.expr(0)
                 self.state = 258
@@ -2379,7 +2379,7 @@ class calculadoraPrimeroMultParser ( Parser ):
                 _la = self._input.LA(1)
 
             self.state = 259
-            self.match(calculadoraPrimeroMultParser.T__19)
+            self.match(lenguajeParser.T__19)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)

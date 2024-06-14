@@ -1,4 +1,4 @@
-grammar calculadoraPrimeroMult;
+grammar lenguaje;
 
 prog: stat+;
 
