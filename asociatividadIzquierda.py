@@ -211,8 +211,8 @@ class EvalVisitor(calculadoraPrimeroMultVisitor):
         plt.bar(x, y)
         plt.show()
 
-    def visitPaintBars(self, ctx):
-        x = self.visit(ctx.expr(0))
+    def visitPaintBrownie(self, ctx):
+        x = self.visit(ctx.expr())
         plt.pie(x)
         plt.show()
 
