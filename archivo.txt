@@ -1,2 +1,0 @@
-Hola Mundo, este es mi primer lenguaje de programacion
-Este es otro intento

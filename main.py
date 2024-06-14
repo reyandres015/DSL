@@ -242,15 +242,39 @@ class EvalVisitor(lenguajeVisitor):
 
 
 def main():
-    input_stream = FileStream("ejemplo.txt")
-    lexer = lenguajeLexer(input_stream)
-    token_stream = CommonTokenStream(lexer)
-    parser = lenguajeParser(token_stream)
-    tree = parser.prog()
+    option = input("Enter '1' to read from file or '2' to read from console: ")
+    if option == '1':
+        file_name = input("Enter the file name: ")
+        try:
+            with open(file_name, 'r') as file:
+                input_stream = InputStream(file.read())
+                lexer = lenguajeLexer(input_stream)
+                token_stream = CommonTokenStream(lexer)
+                parser = lenguajeParser(token_stream)
+                tree = parser.prog()
 
-    eval_visitor = EvalVisitor()
-    eval_visitor.visit(tree)
+                eval_visitor = EvalVisitor()
+                eval_visitor.visit(tree)
+        except Exception as e:
+            print(f"Error reading file: {e}")
+    elif option == '2':
+        input_text = ""
+        print('Ingrese su codigo:')
+        while True:
+            line = input("Enter a line of input (or press Enter to finish): ")
+            if line == "":
+                break
+            input_text += line + "\n"
+        input_stream = InputStream(input_text)
+        lexer = lenguajeLexer(input_stream)
+        token_stream = CommonTokenStream(lexer)
+        parser = lenguajeParser(token_stream)
+        tree = parser.prog()
 
+        eval_visitor = EvalVisitor()
+        eval_visitor.visit(tree)
+    else:
+        print("Invalid option. Please try again.")
 
 if __name__ == '__main__':
     main()
