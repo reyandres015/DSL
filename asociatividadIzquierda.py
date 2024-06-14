@@ -89,13 +89,17 @@ class EvalVisitor(calculadoraPrimeroMultVisitor):
         return matrix
 
     def visitMatrixAdd(self, ctx):
-        matrix1 = self.visit(ctx.matrix(0))
-        matrix2 = self.visit(ctx.matrix(1))
+        num_matrices = ctx.getChildCount() // 2 + 1
+        
+        result_matrix = self.visit(ctx.matrix(0))
+        for i in range(1, num_matrices):
+            result_matrix = self.sumar_matrices(result_matrix, self.visit(ctx.matrix(i)))
 
-        print(matrix1, matrix2)
-        # Sumar las matrices
-        result_matrix = [a + b for row1, row2 in zip(matrix1, matrix2) for a, b in zip(row1, row2)]
         return result_matrix
+    
+    def sumar_matrices(self, matrix1, matrix2):
+        # Sumar las matrices
+        return[[a + b for a, b in zip(row1, row2)] for row1, row2 in zip(matrix1, matrix2)]
 
 def main():
     input_stream = FileStream("ejemplo.txt")

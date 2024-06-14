@@ -10,7 +10,7 @@ stat:
 expr:
 	expr op = ('*' | '/') expr						# MulDiv
 	| expr op = ('+' | '-') expr					# AddSub
-	| matrix '+' matrix ('+' matrix)*				# MatrixAdd
+	| matrix ('+' matrix)+							# MatrixAdd
 	| matrix										# idMatrix
 	| FLOAT											# float
 	| INT											# int
